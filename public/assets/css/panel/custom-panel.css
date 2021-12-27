@@ -1,0 +1,19 @@
+.k-list-item-content .k-icon svg {
+  color: white !important;
+  opacity: 0.8 !important;
+}
+
+.tags-colors {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.tags-colors li {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 0 0 5px;
+  padding: 0;
+}

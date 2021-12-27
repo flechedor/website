@@ -1,0 +1,36 @@
+Title: Bénévolat
+
+----
+
+Slug: donner-un-coup-de-main
+
+----
+
+Htmlcontent:
+
+La Flèche d'Or fonctionne grâce à l'investissement d'une équipe bénévole. Il y a deux façon de s'investir dans la vie du lieu :
+- **Donner des coups de main sur des évènements ou pour de petits chantiers.** 
+Nous faisons régulièrement appel à des bénévoles et organisons des temps de rencontre entre bénévoles pour présenter le lieu et son fonctionnement.
+
+- **Participer à l’organisation du lieu en intégrant une ou plusieurs commissions**.
+L’investissement consiste à participer à la réflexion, à l’organisation, à la mise en place d’outils et à l’impulsion d’actions dans le champs des différentes thématiques. 
+
+**Venez nous rencontrer tous les jeudi de 19h à 21h.**
+
+Quelle que soit la façon dont avez envie de vous impliquer, **remplissez le formulaire ci-dessous afin que nous puissions vous contacter :**
+
+----
+
+Mailto: benevoles@flechedor.org
+
+----
+
+Success:
+
+#### Merci !
+On revient vers vous rapidement.
+A bientôt !
+
+(image: dancing.gif class: first)
+(image: hiphop.gif class: second)
+(image: tenor.gif class: third)

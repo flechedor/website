@@ -1,0 +1,15 @@
+Title: Proposer un projet
+
+----
+
+Htmlcontent:
+
+# Projet de programmation
+
+La situation sanitaire actuelle et les restrictions qu'elle entraîne pour le monde de la culture nous impose de remettre à plat notre organisation.
+
+**Pendant cette phase de travail, nous ne recevons plus de propositions de programmation.**
+
+Nous espérons vous proposer très vite de contribuer à nouveau et pour longtemps à l'animation de la Flèche d'Or, et vous annoncer bientôt une programmation riche et diverse dont nous avons tou-te-s tant besoin !
+
+(image: 221697-photo-bourgault.jpg width: 1200 caption: <small>© photo Pierrick Bourgault</small>)

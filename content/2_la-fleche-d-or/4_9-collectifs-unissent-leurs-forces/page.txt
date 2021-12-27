@@ -1,0 +1,44 @@
+Title: 9 collectifs unissent leurs forces
+
+----
+
+Slug: 9-collectifs-unissent-leurs-forces
+
+----
+
+Htmlcontent:
+
+La Flèche d’Or est pilotée par des bénévoles issu.e.s de 9 collectifs ayant uni leurs forces autour d’un projet commun. Aujourd’hui, ces 9 collectifs s'effacent au profit d’une seule association vouée à l’animation de la Flèche d’Or.
+
+(columns...)
+
+##### La GARE eXPérimentale
+Fondée en 2005, la **(link: https://garexp.org/ text: Gare XP)**  est un collectif pluridisciplinaire, à la fois espace d’expérimentation artistique, salle de spectacle, galerie d’exposition, hébergement pour créateurs fauchés, café associatif et lieu de vie du quartier. Évoluant entre piraterie et diplomatie, elle a d’abord occupé des locaux vacants, avant de bénéficier depuis 2011 de conventions d’occupation de bâtiments propriétés de la Ville de Paris.
+La Gare XP a pour premier objectif de répondre aux besoins d’espaces pour la création libre et accessible.
+
+##### COLLECTIF MU
+Créé en 2002, le **(link: http://www.mu.asso.fr/ text: Collectif MU)** est un bureau de production artistique spécialisé dans les domaines de l’art sonore, de la musique et des nouveaux médias. Depuis 2016, le Collectif MU anime La Station - Gare des Mines, lieu festif et laboratoire consacré aux scènes artistiques émergentes, fondé sur les vestiges d’une gare à charbon désaffectée.
+
+##### DOXA ESTA
+**(link: https://www.facebook.com/DOXAESTA/ text: DOXA ESTA)** est une plateforme d'organisations de concerts et soirées actuellement en résidence au 137 rue du Faubourg du Temple Le Zorba, à Belleville (antérieurement La Pointe Lafayette (2016-2018). L’association organise des ateliers mensuels d’initiation à la sonorisation de concerts pour un public prioritaire (femmes, personnes racisées, personnes non binaires, etc.) Elle fait également partie d'Arrières-Gardes, un média musical mensuel tenu par 5 lieux où sont programmées entre autres des musiques alternatives.
+
+##### COLLECTIF CURRY VAVART
+**(link: https://curry-vavart.com/ text: Curry Vavart)** est un collectif d'artistes pluridisciplinaire qui aménage, gère et anime des espaces de travail artistiques et d’activités partagés. Créé en 2006, il s’est constitué en association en 2011, en réponse à la nécessité pour les artistes et les projets émergents à l’économie précaire ou fragile, d'accéder à des espaces de travail économiquement accessibles dans Paris.
+
+++++
+
+##### COLLECTIF PIEG
+**(link: https://www.facebook.com/piegcollectif text: Pieg)** est une organisation de programmation et de défense des musiques déviantes, ayant d’abord officié au Zorba de Avril 2017 à Décembre 2018, puis au Café de Paris depuis Mai 2019. Le collectif travaille en parallèle à la réhabilitation de la salle principale, un ancien cabaret de l’entre-deux guerre en vue d’y proposer une activité pluridisciplinaire à vocation culturelle et sociale.
+
+##### ANCOATS
+**(link: https://www.ancoats.paris/ text: Ancoats)** se positionne auprès des tiers-lieux, lieux intermédiaires, friches culturelles, et expériences d’urbanisme temporaires qui façonnent le paysage culturel, économique et social de la Ville telle,, et qui fédèrent l’ensemble des parties à l’échelle de chaque territoire d’expérimentation. Ancoats accompagne ces alternatives urbaines et culturelles par la création d’outils, d'études et de formations, afin de renforcer l’ancrage et l’impact territorial de ces initiatives et d’en favoriser l’essaimage.
+
+##### ASSOCIATION DOC
+L’association **(link: https://doc.work/ text: DOC)** est née en 2015 d’un projet, celui d’offrir des espaces de production et de diffusion à bas coût aux artistes contemporain·e·s. DOC accueille près de 95 artistes au sein de ses ateliers, ainsi que des programme de résidence temporaire et organise des événements culturels pluridisciplinaires (exposition, théâtre, concerts, projections etc.) accessibles à tous et toutes.
+
+##### OBLIQ
+**(link: https://www.facebook.com/collectifObliQ text: ObliQ)** veut offrir à celles et ceux qui peinent à trouver des espaces la possibilité de se réunir, de faire du lien, de visibiliser leurs créations et leurs luttes. Composé de personnes qui se battent contre les oppressions, ObliQ donne la priorité à la voix de celles et ceux que la société n’écoute pas.
+
+##### LES REPAS SOLIDAIRES
+L’association **(link: https://www.facebook.com/lesrepassolidaires/ text: Les Repas Solidaires)** a été créée en mai 2020 dans le 20ème arrondissement de Paris. Elle est née de l’initiative d’un restaurateur choisissant de dédier son établissement à la solidarité pendant le confinement dû à l’épidémie de Covid-19. Habitant·e·s, associations et commerçant·e·s du quartier ont alors œuvré ensemble jusqu’au mois de juin à la production de 100 à 500 repas par jour ainsi qu’à la distribution de colis alimentaires à destination de personnes précarisées par le contexte ainsi et des professionnel·le·s mobilisé·e·s. 
+(...columns)

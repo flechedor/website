@@ -1,0 +1,5 @@
+title: Infos pratiques
+icon: question
+extends: layouts/page-with-subpages
+
+

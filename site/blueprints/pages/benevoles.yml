@@ -1,0 +1,49 @@
+title: Bénévoles
+options:
+  changeTemplate: false
+
+columns:
+  - width: 2/3
+    sections:
+      content:
+        type: fields
+        fields:
+          htmlcontent:
+            label: Contenu
+            type: textarea
+            size: huge
+
+  - width: 1/3
+    sections:
+      benevoles:
+        type: fields
+        fields:
+          mailto:
+            label: Destinataire du formulaire
+            type: email
+            default: benevoles@flechedor.org
+            required: true
+            help: 'Les formulaires sont également enregistrés dans un fichier .csv (excel) : https://flechedor.org/benevoles/4u0yFwkN3IKW3HlCF92Pwa3YKty4zIv0'
+          success:
+            label: Message après soumission du formulaire
+            type: textarea
+            size: small
+      files:
+        headline: Fichiers
+        type: files
+      help:
+        type: fields
+        fields:
+          infos:
+            label: Infos
+            type: info
+            #theme: none
+            text: |
+              Pour formatter le texte :
+              https://getkirby.com/docs/reference/text/markdown
+
+              Les fichiers peuvent être glissés-déposés dans le bloc de contenu. Ils seront placés à l'endroit où se situe le curseur dans le bloc.
+              Ils seront transformés en image ou en lien selon le type de fichier.
+
+              Pour connaitre les différentes balises et leurs paramètres :
+              https://getkirby.com/docs/reference/text/kirbytags

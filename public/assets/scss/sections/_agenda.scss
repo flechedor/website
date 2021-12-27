@@ -1,0 +1,478 @@
+main.section_agenda {
+
+  aside {
+    width: 160px;
+    position: fixed;
+    top: 120px;
+  }
+
+  section.content {
+    margin-left: 180px;
+    margin-right: 0;
+    max-width: 100%;
+  }
+
+  ul.filters {
+    list-style: none;
+    margin: 0 0 20px;
+    padding: 0;
+
+    li {
+      margin: 0 0 5px 0;
+      padding: 0;
+      font-size: 0.9rem;
+
+      a {
+        color: $dark;
+
+        &:hover {
+          color: $gold !important;
+        }
+
+        &.active {
+          display: block;
+          color: #bbb;
+          cursor: default;
+
+          &:hover {
+            color: #bbb !important;
+          }
+
+          &::after {
+            content: "";
+            display: inline-block;
+            border: solid $gold;
+            border-width: 0 2px 2px 0;
+            width: 6px;
+            height: 10px;
+            transform: rotate(45deg);
+            margin-left: 10px;
+            position: relative;
+            top: -2px;
+          }
+        }
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+
+      span.color {
+        width: 10px;
+        height: 10px;
+        display: inline-block;
+        margin-right: 5px;
+        border-radius: 50%;
+      }
+    }
+  }
+
+  .sections .filters a {
+    font-weight: 500;
+  }
+
+  /*!
+    Title: Vertical-Timeline
+    Version: 2.0.0
+    Last Change: 04/30/17
+    Author: Ryan Fitzgerald
+    Repo: https://github.com/RyanFitzgerald/vertical-timeline
+    Issues: https://github.com/RyanFitzgerald/vertical-timeline/issues
+	LICENSE: MIT
+*/
+  .vtimeline {
+    position: relative;
+    //overflow: hidden;
+
+    &::before, &::after {
+      content: '';
+      position: absolute;
+      height: 100%;
+      width: 1px;
+      background: $gold;
+      bottom: 0;
+      right: 0;
+      margin: 0 auto;
+      z-index: -1;
+     }
+
+    &::before {
+      top: 20px;
+      left: 4px;
+    }
+
+    &::after {
+      top: -20px;
+      left: -4px;
+    }
+
+    .vtimeline-point {
+      position: relative;
+      width: 100%;
+      margin-bottom: 30px;
+      display: flex;
+      align-items: center;
+
+      .vtimeline-icon {
+        position: absolute;
+        height: 25px;
+        width: 25px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        border-radius: 50%;
+        background: $red;
+        top: calc(25% - 12.5px);
+
+        &::before {
+          content: "";
+          position: absolute;
+          top: 6px;
+          left: 7px;
+          border-radius: 50%;
+          width: 6px;
+          height: 6px;
+          background-color: white;
+        }
+
+        &::after {
+          width: 27px;
+          height: 27px;
+          border: 5px solid white;
+          display: block;
+          content: "";
+          position: absolute;
+          top: -1px;
+          left: -1px;
+          //box-shadow: 0 0 5px 0 rgba(0,0,0,0.25);
+          border-radius: 50%;
+        }
+      }
+
+      .vtimeline-block {
+        width: 45%;
+        margin: 0;
+        transition: 0.5s ease all;
+        //border: 1px solid #ddd;
+        box-shadow: 2px 4px 10px 3px rgba(0, 0, 0, 0.1);
+        background: white;
+        padding: 0;
+
+        &::after {
+          content: '';
+          position: absolute;
+          top: 25%;
+          transform: translateY(-50%) rotate(45deg);
+          left: calc(45% - 11px);
+          width: 20px;
+          height: 20px;
+          background: white;
+          box-shadow: 5px -5px 10px -2px rgba(0, 0, 0, 0.1);
+          transition: all 0.5s ease;
+        }
+
+        .ribbon {
+          position: absolute;
+          top: 15px;
+          left: -15px;
+          overflow: visible;
+          font-size: 14px;
+          line-height: 14px;
+          font-family: 'caracteres_l1regular', sans-serif;
+          font-weight: 500;
+          z-index: 3;
+
+
+          span {
+            display: block;
+            padding: 5px 10px;
+            position: relative;
+            overflow: visible;
+            margin-left: 0;
+            text-decoration: none;
+            text-transform: uppercase;
+
+            &::after {
+              content: "";
+              height: 0;
+              width: 0;
+              display: block;
+              position: absolute;
+              bottom: -15px;
+              left: -1px;
+              border-top: 15px solid rgba(0,0,0,0.25);
+              border-left: 15px solid transparent;
+            }
+
+            &.resa {
+              background: gold;
+              color: $dark;
+            }
+
+            &.alert {
+              background: $brick;
+              color: white;
+            }
+
+            &.rip {
+              background: $dark;
+              color: white;
+            }
+          }
+        }
+
+        .vtimeline-content {
+          transition: 0.5s ease all;
+
+          figure {
+            margin: 0;
+            padding: 28px 5px 0;
+          }
+
+          .content {
+            position: relative;
+            z-index: 2;
+          }
+
+          .filters {
+            position: absolute;
+            right: 8px;
+            display: flex;
+            margin: 10px 0 0;
+            li {
+              margin: 0 0 2px;
+              .color {
+                display: block;
+              }
+            }
+          }
+          .title {
+            margin: 20px;
+            h3 {
+              margin: 0 0 5px;
+              text-align: center;
+              padding: 0;
+              font-size: 18px;
+              color: $dark;
+            }
+
+            .headline {
+              margin: 0;
+              padding: 0;
+              text-align: center;
+              color: $red;
+              text-transform: uppercase;
+              font-size: 14px;
+              line-height: 18px;
+            }
+
+            a {
+              &:hover {
+                color: $red;
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+
+        &.vt-animate-fade {
+          opacity: 0;
+        }
+
+        &.vt-animate-slide {
+          opacity: 0;
+          transform: translateX(-100%);
+        }
+
+        .vtimeline-date {
+          position: absolute;
+          display: inline-block;
+          left: 55%;
+          top: 25%;
+          transform: translateY(-50%);
+          font-weight: normal;
+          padding: 5px 20px;
+          width: auto;
+          color: $dark;
+          box-shadow: 0 2px 9px 1px rgba(0,0,0,0.1);
+          background: #fbfbfb;
+
+          .time {
+            display: block;
+            //position: absolute;
+            font-weight: 300;
+            color: $red;
+            text-transform: lowercase;
+          }
+        }
+
+        &.vtimeline-right {
+          margin-left: 55%;
+          box-shadow: -2px 4px 10px 3px rgba(0, 0, 0, 0.1);
+
+          &::after {
+            left: auto;
+            right: calc(45% - 10px);
+            box-shadow: -5px 5px 10px 2px rgba(0, 0, 0, 0.1);
+          }
+
+          &.vt-animate-slide {
+            transform: translateX(100%);
+          }
+
+          .vtimeline-date {
+            left: auto;
+            right: 55%;
+          }
+
+          .vtimeline-content {
+
+            .filters {
+              right: auto;
+              left: 8px;
+              li {
+
+              }
+            }
+
+            .ribbon {
+              right: -15px;
+              left: auto;
+
+              span::after {
+                right: -1px;
+                left: auto;
+                border-right: 15px solid transparent;
+                border-left: none;
+              }
+            }
+          }
+        }
+
+        &.vt-noarrows::after {
+          content: none;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 991px) {
+
+    .vtimeline {
+      &::before {
+        display: none;
+      }
+      .vtimeline-point {
+        margin-bottom: 15px;
+
+        .vtimeline-icon {
+          display: none;
+        }
+
+        .vtimeline-block, .vtimeline-block.vtimeline-right {
+          width: 100% !important;
+          margin: 20px !important;
+          box-shadow: -2px 4px 10px 3px rgba(0, 0, 0, 0.1);
+
+          &::after {
+            display: none;
+          }
+
+          &.vt-animate-slide {
+            transform: translateX(100%);
+          }
+
+          .vtimeline-content {
+
+            .filters {
+              justify-content: flex-start;
+              right: auto;
+              left: 8px;
+              margin: 0;
+            }
+
+            .ribbon {
+              right: 5px !important;
+              left: auto !important;
+              top: 36px;
+
+              span::after {
+                right: -1px;
+                left: auto;
+                border-right: 15px solid transparent;
+                border-left: none;
+              }
+            }
+
+            figure {
+              padding: 25px 10px 0;
+            }
+          }
+
+          &::after {
+            left: auto;
+            right: 85%;
+            border-top: 10px solid transparent;
+            border-bottom: 10px solid transparent;
+            border-left: none;
+            border-right: 10px solid #eee;
+          }
+
+          .vtimeline-date {
+            position: relative;
+            top: 0;
+            left: 22px;
+            right: auto;
+
+            .time {
+              display: block;
+              margin-left: 0;
+              position: relative;
+            }
+          }
+
+          &.vtimeline-right .vtimeline-date {
+            right: auto;
+          }
+
+          &.vt-animate-slide {
+            transform: translateX(100%);
+          }
+        }
+      }
+      &.basic .vtimeline-date {
+        padding: 10px 10px 0 10px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 767px) {
+    aside {
+      width: 100%;
+      position: static;
+      .filters.colors, .filters.reservations {
+        display: none;
+      }
+    }
+
+    section.content {
+      margin-left: 0;
+
+      .vtimeline-content {
+        .ribbon {
+          top: 50px !important;
+        }
+
+        .filters {
+          display: none !important;
+        }
+      }
+
+      .vtimeline-date {
+        .day {
+          display: none;
+        }
+      }
+    }
+  }
+}

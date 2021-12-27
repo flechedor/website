@@ -1,0 +1,48 @@
+title: Contact
+icon: phone
+
+columns:
+  - width: 1/2
+    sections:
+      contact:
+        type: fields
+        fields:
+          mailfrom:
+            label: Utiliser l'email du visiteur comme expéditeur
+            type: toggle
+            text:
+              - Non
+              - Oui
+          mailto:
+            label: Destination du formulaire
+            type: structure
+            fields:
+              pole:
+                label: Commission
+                type: text
+              email:
+                label: Email de destination
+                type: email
+      image:
+        type: files
+        headline: Image de la page contact
+        max: 1
+  - width: 1/2
+    sections:
+      message:
+        type: fields
+        fields:
+          subject:
+            label: Sujet du mail
+            type: text
+            default: Message depuis le formulaire de contact
+          success:
+            label: Texte de succès de l'envoi
+            type: textarea
+            size: medium
+
+
+
+
+
+

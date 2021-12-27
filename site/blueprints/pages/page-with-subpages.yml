@@ -1,0 +1,8 @@
+title: Page avec sous-pages
+extends: layouts/page-with-subpages
+addFields:
+  title:
+    label: Title
+    type: text
+    required: true
+    icon: title

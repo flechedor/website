@@ -1,0 +1,13 @@
+title: Page
+options:
+  changeTemplate:
+    - page
+    - page-with-subpages
+extends: layouts/page
+
+addFields:
+  title:
+    label: Title
+    type: text
+    required: true
+    icon: title

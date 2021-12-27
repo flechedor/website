@@ -1,0 +1,31 @@
+columns:
+  - width: 2/3
+    sections:
+      published:
+        headline: Pages en ligne
+        type: pages
+        templates:
+          - page
+          - benevoles
+        status: published
+      draft:
+        headline: Brouillons
+        type: pages
+        templates: page
+        status: draft
+        create:
+          - page
+          - page-with-subpages
+  - width: 1/3
+      sections:
+        config:
+          type: fields
+          fields:
+            infos:
+              label: Infos
+              type: info
+              #theme: none
+              text: |
+                Cette page n'a aucun contenu.
+                Elle sert d'intermédiraire pour créer les sous-menus de la navigation du site.
+

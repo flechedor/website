@@ -1,0 +1,27 @@
+Title: Solidaire
+
+----
+
+Slug: solidaire
+
+----
+
+Htmlcontent:
+
+(columns...)
+
+La Flèche d'Or continue et renforce ses actions de solidarité tournées vers le quartier et ses habitant·e·s.
+
+####Les rendez-vous réguliers à faire connaître autour de vous :
+- **Distribution de produits d'hygiène** : les 1er mardi du mois de 10h à 12h
+- **Ressource café** (accès au droit et au numérique) : tous les jeudi de 10h à 12h
+- **Petits-déjeuners solidaries** : les dimanches de 9h30 à 11h30
+
+####Et à partir du mois de décembre :
+- Retour de la **Cantine à prix libre** : du mercredi au samedi de 12h à 14h.
+
+++++
+
+(image: img-20210629-wa0007.jpg)
+
+(...columns)

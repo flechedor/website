@@ -1,0 +1,12 @@
+Title: Horaires d’ouverture
+
+----
+
+Htmlcontent:
+
+La Flèche d’or est ouverte du mercredi au dimanche
+- Mercredi : 18h - 00h
+- Jeudi : 10h-12h / 14h - 00h
+- Vendredi : 19h30-02h
+- Samedi : 19h30-02h
+- Dimanche : 9h30-11h30 (et ouvertures exceptionnelles l'après-midi)

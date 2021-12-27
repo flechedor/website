@@ -1,0 +1,28 @@
+Title: Tarifs
+
+----
+
+Slug: tarifs
+
+----
+
+Htmlcontent:
+
+(columns...)
+
+######Billetterie
+À la **Flèche d'Or**, les événements organisés sont tous à **prix libre**. Cela signifie que vous payez ce que vous pouvez et ce qu'il vous semble juste.
+
+En journée et lorsque le bar associatif est ouvert, **l'entrée est libre** !
+
+++++
+
+######Bar
+Le bar de la Flèche d'Or est à prix tout doux pour que tout le monde puisse en profiter :
+- Bière blonde : 2€ (demi)  / 4€ (pinte)
+- Bière artisanale : 3€ (demi) / 6€ (pinte)
+- Vin : 2€
+- Soft : 1,50€
+- Boissons chaudes : 0.50€
+
+(...columns)

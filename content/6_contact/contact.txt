@@ -1,0 +1,25 @@
+Title: Contact
+
+----
+
+Mailfrom: true
+
+----
+
+Mailto:
+
+- 
+  pole: Contact
+  email: contact@flechedor.org
+
+----
+
+Subject: Message depuis le formulaire du site
+
+----
+
+Success:
+
+Votre message a bien été envoyé.
+Nous y répondrons dès que possible.
+À bientôt !

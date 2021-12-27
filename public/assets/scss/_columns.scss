@@ -1,0 +1,36 @@
+.columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-left: -1rem;
+  margin-right: -1rem;
+}
+
+.column {
+  flex: 0 1 100%;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  max-width: 100%;
+  overflow: hidden;
+  font-size: 0.9rem;
+
+  figure {
+    margin-top: 5px;
+
+    figcaption {
+      text-align: right;
+      font-weight: 300;
+      color: #555;
+    }
+  }
+
+  p {
+    text-align: justify;
+  }
+}
+
+@media (min-width: 768px) {
+  .column {
+    flex: 1;
+  }
+}

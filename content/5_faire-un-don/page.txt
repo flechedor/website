@@ -1,0 +1,21 @@
+Title: Faire un don
+
+----
+
+Slug: faire-un-don
+
+----
+
+Htmlcontent:
+
+(image: besoindevousrose.jpg)
+
+Faire vivre un lieu comme la Flèche d'Or, et les projets que l'on y porte demande beaucoup de ressources humaines, matérielles et financières. 
+
+Nous organisons la collecte de denrées alimentaires et de produits d'hygiène. Nous préparons des repas servis sur place le midi pour notre cantine solidaire à prix libre. Nous proposons à notre public l'accès à une programmation culturelle multiple et sélectionnée avec soin ouverte à tou-te-s grâce à la pratique du prix libre à la billeterie. Nous réalisons régulièrement des travaux de maintenance et d'amélioration du bâtiment pour vous accueillir dans des conditions toujours meilleures.
+
+Nous avons besoin de votre soutien pour maintenir ces activités et en envisager d'autres.
+
+#### Pour que vive le projet de La Flèche d'Or, pour que vivent la culture et les solidarités, soutenez-nous !
+
+<iframe id="haWidget" allowtransparency="true" scrolling="auto" src="https://www.helloasso.com/associations/l-inter-co/formulaires/1/widget" style="width:100%;height:750px;border:none;" onload="window.scroll(0, this.offsetTop)"></iframe>

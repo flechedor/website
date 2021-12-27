@@ -1,0 +1,32 @@
+columns:
+  - width: 2/3
+    sections:
+      content:
+        type: fields
+        fields:
+          htmlcontent:
+            label: Contenu
+            type: textarea
+            size: huge
+
+  - width: 1/3
+    sections:
+      files:
+        headline: Fichiers
+        type: files
+      help:
+        type: fields
+        fields:
+          infos:
+            label: Infos
+            type: info
+            #theme: none
+            text: |
+              Pour formatter le texte :
+              https://getkirby.com/docs/reference/text/markdown
+
+              Les fichiers peuvent être glissés-déposés dans le bloc de contenu. Ils seront placés à l'endroit où se situe le curseur dans le bloc.
+              Ils seront transformés en image ou en lien selon le type de fichier.
+
+              Pour connaitre les différentes balises et leurs paramètres :
+              https://getkirby.com/docs/reference/text/kirbytags

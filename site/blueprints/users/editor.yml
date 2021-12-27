@@ -1,0 +1,8 @@
+title: Editeur
+permissions:
+  pages:
+    delete: false
+  users: false
+  user:
+    changeRole: false
+    delete: false

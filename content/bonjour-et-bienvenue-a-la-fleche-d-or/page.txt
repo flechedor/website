@@ -1,0 +1,29 @@
+Title: Bonjour et bienvenue à la Flèche d’Or
+
+----
+
+Slug: bonjour-et-bienvenue-a-la-fleche-d-or
+
+----
+
+Htmlcontent:
+
+(columns...)
+
+(image: cul-beni_044.jpg caption: © Leho De Sosa)
+
+++++
+
+Merci de ton adhésion, nous avons hâte de te retrouver lors de nos prochains événements !
+
+Tu trouveras ci-dessous les liens pour rejoindre les groupes whatsapp :
+
+**(link: http://bit.ly/3GrCfu0 text: Orga et Info)** : pour avoir accès au planning mis à jour régulièrement (et s’y inscrire si tu le souhaites) ainsi qu’à des informations concernant l’organisation et les événements se déroulant à la Flèche
+
+**(link: https://bit.ly/316XZeK text: Convivialité)** : groupe informel pour créer du lien entre nous qui est autogéré et dont la participation reste facultative 
+
+Pour rappel utile, le **(link: https://drive.google.com/drive/folders/1ui_ATIIDpkwDs9EkMqSD_qlpiSC5EZjA text: guide du bénévole)** où tu trouveras une description des différentes manières de participer à nos actions et événements ainsi que le **(link: https://docs.google.com/spreadsheets/d/1zaUboNwm2d-xhHVfjX6qL9N9lfAMexa1R3qeMMpQtQs/edit#gid=127479037 text: planning)** mis à jour semaine après semaine.
+
+Pour connaître le détail des événements à venir, l’agenda est **(link: https://flechedor.org/agenda text: consultable ici)**.
+
+(...columns)

@@ -1,0 +1,48 @@
+type: pagetable
+headline: Événements
+parent: kirby.page("agenda")
+template: event
+translations:
+  empty: Aucun événement
+  rowsPerPage: Événements affichés
+  all: Tous
+  filterPages: Filtrer les événements…
+  reset: Reset
+#sortBy: debut desc
+columns:
+  title:
+    label: Quoi
+    text: '{{ page.title }}'
+    sortable: true
+    searchable: true
+    width: 1/3
+  debut:
+    type: date
+    label: Quand
+    text: '{{ page.debut.toDate("%Y-%m-%d") }}'
+    dateInputFormat: 'YYYY-MM-DD'
+    dateOutputFormat: 'dddd D MMMMM YYYY'
+    sortable: true
+    searchable: true
+    width: 1/6
+  filters:
+    label: Filtres
+    text: '{{ page.filters.toColors }}'
+    #width: 1/6
+  reservations:
+    label: Réservations
+    text: '{{ page.reservations }}'
+    searchable: true
+    sortable: true
+    #width: 1/6
+  recurrent:
+    label: Récurrent
+    type: boolean
+    text: '{{ page.recurrent.boolToStr }}'
+    sortable: true
+    searchable: true
+    #width: 1/6
+
+
+
+#info: '{{ page.debut.toDate("%Y-%m-%d") }} // {{ page.tags }} // {{ page.frequency }}'

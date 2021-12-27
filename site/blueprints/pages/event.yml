@@ -1,0 +1,207 @@
+title: Événement
+icon: calendar
+
+columns:
+  - width: 2/3
+    sections:
+      description:
+        type: fields
+        fields:
+
+          eventid:
+            type: hidden
+          created:
+            type: date
+            time: true
+            when:
+              never: true
+          updated:
+            type: date
+            time: true
+            when:
+              never: true
+          recurrent:
+            type: toggle
+            default: false
+            when:
+              never: true
+
+          debut:
+            type: date
+            label: Date de début
+            required: true
+            min: 2020-08-01
+            max: 2025-12-31
+            width: 1/2
+          fin:
+            type: date
+            label: Date de fin
+            min: 2020-08-01
+            max: 2025-12-31
+            width: 1/2
+          showtime:
+            type: toggle
+            default: false
+            label: Montrer les horaires sous la date
+            width: 1/3
+            text:
+              - non
+              - oui
+          opentime:
+            type: time
+            label: Heure d'ouverture
+            width: 1/3
+            when:
+              showtime: true
+          closetime:
+            type: time
+            label: Heure de fermeture
+            width: 1/3
+            when:
+              showtime: true
+          headline:
+            type: text
+            label: Entête
+            help: Apparait sous le titre dans l'agenda et dans la fiche
+          description:
+            label: Description
+            type: textarea
+            size: huge
+            required: true
+
+  - width: 1/3
+    sections:
+      config:
+        type: fields
+        fields:
+          filters:
+            label: Filtres
+            type: multiselect
+            accept: options
+            options: query
+            query:
+              fetch: page.parent.filters.toStructure
+              text: '{{ structureItem.name }}'
+              value: '{{ structureItem.name }}'
+          reservations:
+            type: select
+            default: "sans réservation"
+            options:
+              "sans réservation": Sans réservation
+              "avec réservation": Avec réservation
+              complet: Complet
+              "annulé": Annulé
+      visuel:
+        type: fields
+        fields:
+          cover:
+            label: Image principale
+            type: files
+            layout: cards
+            size: small
+            max: 1
+            help: 1000px de large minimum (si possible...), 72p, RVB
+          vignette:
+            type: image-clip
+            layout: cards
+            size: tiny
+            max: 1
+            help: |
+              pour la home, 480*360px min (format 4:3), 72p, RVB
+              Vous pouvez redimensionner l'image au bon format via l'icône en haut à gauche au survol.
+            clip:
+              minwidth: 480
+              minheight: 360
+              ratio: fixed
+
+
+      files:
+        type: files
+        headline: Fichiers
+
+      others:
+        type: fields
+        fields:
+          othersHeadline:
+            type: headline
+            numbered: false
+            label: Événement récurrent
+          copyContent:
+            type: toggle
+            label: Copier le contenu dans les événements similaires à la prochaine sauvegarde ?
+            text:
+              - non
+              - oui
+            default: false
+            help: |
+              Attention, cela remplacera tous les contenus déjà enregistrés dans les autres événements similaires !
+              Ne seront modifiés que les événements qui sont hors ligne.
+          publishOthers:
+            type: toggle
+            text:
+              - non
+              - oui
+            label: Publier tous les événements futurs similaires quand celui-ci est publié ?
+            when:
+              published: false
+          unpublishOthers:
+            type: toggle
+            text:
+              - non
+              - oui
+            label: Mettre hors ligne tous les événements futurs similaires en même temps que celui-ci ?
+            when:
+              published: true
+          published:
+            type: toggle
+            label: Réccurence publiée
+            text:
+              - oui
+              - non
+            default: false
+            disabled: true
+            when:
+              never: true
+        when:
+          recurrent: true
+
+addFields:
+  title:
+    label: Title
+    type: text
+    required: true
+    icon: title
+  debutadd:
+    label: Début
+    type: date
+    min: 2020-08-01
+    max: 2025-12-31
+    required: true
+  finadd:
+    label: Fin
+    type: date
+    min: 2020-08-01
+    max: 2025-12-31
+  recurrentadd:
+    type: toggle
+    label: Récurrent
+    default: false
+    text:
+      - non
+      - oui
+  interval:
+    type: number
+    step: 1
+    min: 1
+    label: Nombre de jours d'interval
+    default: 7
+    when:
+      recurrentadd: true
+  infos:
+    label: Infos
+    type: info
+    text: Lorsque la fiche est récurrente, la date de fin et l'interval permettent de calculer le nombre d'événements à créer.
+    when:
+      recurrentadd: true
+
+

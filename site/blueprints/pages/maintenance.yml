@@ -1,0 +1,7 @@
+title: Maintenance
+icon: bug
+
+options:
+  changeStatus: false
+
+extends: layouts/page

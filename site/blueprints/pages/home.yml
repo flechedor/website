@@ -1,0 +1,9 @@
+title: Page d'accueil
+icon: home
+
+options:
+  changeStatus: false
+
+extends: layouts/page
+
+

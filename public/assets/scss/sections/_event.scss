@@ -1,0 +1,151 @@
+main.event {
+  nav.events-nav {
+    .next {
+      float: right;
+
+      &::after {
+        width: 6px;
+        height: 6px;
+        border: solid $red;
+        border-width: 2px 2px 0 0;
+        transform: rotate(45deg);
+        content: "";
+        display: inline-block;
+        margin-left: 0.33em;
+        position: relative;
+        top: -1px;
+      }
+    }
+
+    .back {
+      &::before {
+        width: 6px;
+        height: 6px;
+        border: solid $red;
+        border-width: 2px 0 0 2px;
+        transform: rotate(-45deg);
+        content: "";
+        display: inline-block;
+        margin-right: 0.33em;
+        position: relative;
+        top: -1px;
+      }
+    }
+  }
+  .params {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+
+    .colors {
+      width: 200px;
+      text-align: right;
+      .filters {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        font-size: 0.9rem;
+        display: inline-block;
+        li {
+          text-align: left;
+          span.color {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+
+    .dates {
+      //flex: 1 1 1fr;
+      font-size: 18px;
+      padding: 10px 25px;
+      margin: 20px auto;
+      background: #fbfbfb;
+      box-shadow: 0 2px 9px 1px rgba(0,0,0,0.1);
+      display: inline-block;
+      font-weight: 500;
+      text-align: center;
+
+      .time {
+        display: block;
+        color: $red;
+        text-transform: lowercase;
+        padding-left: 5px;
+        font-weight: 500;
+      }
+    }
+
+    .reservation {
+      width: 200px;
+      span {
+        padding: 5px 15px;
+        margin: 0;
+        display: inline-block;
+        font-size: 18px;
+        font-weight: 500;
+        box-shadow: 2px 2px 8px -2px rgba(0,0,0,0.2);
+
+        &.resa {
+          background: gold;
+          color: $dark;
+        }
+
+        &.alert {
+          background: $brick;
+          color: white;
+        }
+
+        &.rip {
+          background: $dark;
+          color: white;
+        }
+      }
+    }
+  }
+
+
+  header {
+    margin-bottom: 30px;
+    h1 {
+      margin: 0;
+    }
+    .headline {
+      font-size: 20px;
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: 300;
+      margin: 0;
+    }
+  }
+
+  section.content {
+    max-width: 800px;
+    margin: 0 auto;
+    figure {
+      margin-bottom: 30px;
+    }
+
+    p {
+      text-align: justify;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .params {
+      flex-wrap: wrap;
+      margin-top: 15px;
+      .colors, .reservation {
+        width: auto;
+      }
+      .dates {
+        width: 80%;
+        order: 1;
+      }
+    }
+  }
+}

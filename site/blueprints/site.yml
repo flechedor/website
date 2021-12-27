@@ -1,0 +1,70 @@
+title: Site
+
+tabs:
+  content:
+    label: Contenu du site
+    columns:
+      left:
+        width: 1/2
+        sections:
+          published:
+            headline: Navigation
+            type: pages
+            status: published
+            image:
+              query: false
+          draft:
+            headline: Brouillons
+            type: pages
+            status: draft
+            create:
+              - page
+              - page-with-subpages
+            image:
+              query: false
+
+  infos:
+    label: Informations générales
+    columns:
+      left:
+        width: 1/2
+        sections:
+          seo:
+            type: fields
+            fields:
+              description:
+                label: Description
+                type: textarea
+                size: medium
+                buttons: false
+
+      right:
+        width: 1/2
+        sections:
+          social:
+            type: fields
+            fields:
+              instagram:
+                label: Instagram
+                type: url
+                icon: instagram
+              facebook:
+                label: Facebook
+                type: url
+                icon: facebook
+
+  configuration:
+    label: Maintenance
+    fields:
+      maintenance:
+        label: Maintenance
+        type: toggle
+        text: Mettre le site en mode Maintenance
+        width: 1/3
+      cache:
+        type: janitor
+        label: Vider le cache
+        progress: Nettoyage...
+        icon: refresh
+        job: cleanCache
+

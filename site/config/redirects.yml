@@ -1,0 +1,4 @@
+status: "301"
+from: agenda/test
+to: >
+  https://flechedor.lan/agenda/20201007-test
