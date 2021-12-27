@@ -2,7 +2,10 @@
 
 return function($page, $pages, $kirby)
 {
-    $events = page('agenda')->children()->listed()->filterBy('fin', 'date >=', date('Y-m-d'))->sortBy('debut', 'asc')->limit(3);
+    $events = page('agenda')->children()->listed()
+                            ->filterBy('fin', 'date >=', date('Y-m-d'))
+                            ->sortBy('debut', 'asc')
+                            ->limit(3);
 
     $reservations = [
         'avec réservation' => [

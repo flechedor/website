@@ -90,11 +90,6 @@ $ids = explode('/', $page->id());
       }
       return false;
     });
-
-    $('#timeline').verticalTimeline({
-      alternate: true,
-      animate: "fade"
-    });
   });
 
 </script>

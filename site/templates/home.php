@@ -14,7 +14,10 @@ $ids = explode('/', $page->id());
 	
     <h1><?= $h1 ?></h1>
     <section class="section_<?= array_pop($ids) ?>">
-      <div class="presentation"><?= $text ?></div>
+      <div class="presentation">
+        <?= $text ?>
+      </div>
+
       <?php if($events->count()): ?>
       <hr>
       <h2>les prochains événements</h2>
