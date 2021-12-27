@@ -48,6 +48,13 @@
             </form>
           <?php endif ?>
         </div>
+
+        <form action="https://gmail.us19.list-manage.com/subscribe/post?u=28d0a436313a02c8b4b15e719&amp;id=10b0d80558" method="post" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+          <label for="newsletter-email">Inscrivez-vous à la newsletter !</label>
+          <input type="text" name="EMAIL" placeholder="@email"><input type="submit" name="subscribe" value="OK">
+          <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_28d0a436313a02c8b4b15e719_10b0d80558" tabindex="-1" value=""></div>
+        </form>
+        
         <div class="column">
           <figure>
             <img src="<?= $page->image()->resize(600)->url() ?>" alt="">
