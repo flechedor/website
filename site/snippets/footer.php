@@ -1,6 +1,5 @@
+<?= js('assets/js/main.js') ?>
+</main>
+</body>
 
-    </div>
-
-    <?= js('assets/js/main.js') ?>
-  </body>
 </html>

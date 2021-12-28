@@ -1,0 +1,29 @@
+@import '_layout.css';
+@import '_menu.css';
+:root {
+    --primary-color: #f30608;
+    --text-color: white;
+    --bg-color: black;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+h1,
+h2 {
+    text-transform: uppercase;
+}
+
+figure {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+}

@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui;
+}
+
+menu,
+main {
+    width: 50%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 1.5rem 3rem;
+}
+
+main {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin-left: 50%;
+}
