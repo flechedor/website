@@ -6,7 +6,6 @@ columns:
         type: pages
         templates:
           - page
-          - benevoles
         status: published
       draft:
         headline: Brouillons

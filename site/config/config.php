@@ -190,31 +190,6 @@ return [
             }
         }
     ],
-    'routes' => [
-        [
-            'pattern' => 'benevoles/(:alphanum)',
-            'action' => function(string $key = '') {
-                if($key === '4u0yFwkN3IKW3HlCF92Pwa3YKty4zIv0') {
-                    require dirname(__FILE__).'/../libs/cryptor.class.php';
-                    $cryptor = new Cryptor(option('secret'));
-                    $file = kirby()->root('benevoles').'/base.db';
-                    $data = $cryptor->decrypt(file_get_contents($file));
-                    $csv = unserialize($data);
-                    $tmp = kirby()->root('benevoles').'/tmp.csv';
-                    $fp = fopen($tmp, 'w');
-                    foreach($csv as $row) {
-                        fputcsv($fp, $row);
-                    }
-                    fclose($fp);
-                    $response =  Response::download($tmp, 'benevoles.csv');
-                    unlink($tmp);
-                    return $response;
-                } else {
-                    return false;
-                }
-            }
-        ]
-    ],
     'cache' => [
         'pages' => [
             'active' => !$debug, //!$debug,

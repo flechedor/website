@@ -28,8 +28,7 @@ $kirby = new Kirby([
         'accounts' => $storage . '/accounts',
         'cache' => $storage . '/cache',
         'logs' => $storage . '/logs',
-        'sessions' => $storage . '/sessions',
-        'benevoles' => $storage . '/benevoles',
+        'sessions' => $storage . '/sessions'
     ]
 ]);
 
