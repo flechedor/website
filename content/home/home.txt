@@ -4,13 +4,11 @@ Title: Bienvenue à la Flèche d’Or !
 
 Htmlcontent:
 
-(columns...)
-
-(image: 221604-photo-bourgault.jpg caption: <small>© photo Pierrick Bourgault</small> width: 670)
-
-++++
+## Notre Histoire
 
 Depuis août 2020, la Flèche d’Or est occupée par un collectif qui entend faire de ce lieu historique un espace de vie non marchand, culturel et solidaire au service du quartier et des luttes sociales.
+
+(image: 221604-photo-bourgault.jpg caption: <small>© photo Pierrick Bourgault</small> width: 670)
 
 **La Flèche d’Or est un (link: https://flechedor.org/agenda text: lieu culturel)** qui porte une attention particulière aux initiatives portées par des personnes habitant le quartier et/ou appartenant à des groupes minorisés. La programmation y est construite collectivement pour accueillir toute la semaine des concerts, projections, théâtre, ateliers socioculturels, repas solidaires, bar, expositions, ou tout autre projet que l’on aurait pas encore imaginé.
 **
@@ -19,7 +17,3 @@ De la programmation à l’accueil, nous avons à cœur d’en faire (link: http
 Parce que nos manières de nous organiser sont elles aussi politiques, nous voulons construire une gouvernance la plus collective, horizontale et participative possible. 
 
 **La Flèche d’Or est un lieu de solidarité** ancré au cœur d’un quartier historiquement militant et solidaire. Nous y organisons des collectes et distributions de denrées alimentaires ou d’hygiène et proposons une cantine populaire le midi.
-
-(...columns)
-
-<iframe src="https://open.spotify.com/embed/playlist/0jkay3xgLyK4l30tqXRUYS" width="100%" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>

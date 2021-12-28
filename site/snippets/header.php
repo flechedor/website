@@ -20,7 +20,7 @@ if(!$kirby->user() && $site->maintenance()->isTrue() && $page->uid() != 'mainten
       <nav id="main-nav" class="navbar navbar-expand-lg fixed-top navbar-light">
         <div class="container-xl">
           <div class="navbar-header">
-            <a class="navbar-brand" href="<?= $site->url() ?>"><span class="title"><img src="<?= $site->url() ?>/assets/img/flechedor-logo-x60gold.png" alt="Flèche d'Or"></span></a>
+            <a class="navbar-brand" href="<?= $site->url() ?>"><span class="title"><img src="<?= $site->url() ?>/assets/img/flechedor-logo.png" alt="Flèche d'Or"></span></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -28,22 +28,7 @@ if(!$kirby->user() && $site->maintenance()->isTrue() && $page->uid() != 'mainten
           <div class="collapse navbar-collapse" id="navbarContent">
             <ul class="navbar-nav ml-auto">
               <?php foreach ($site->children()->listed() as $item): ?>
-                <?php if($item->hasListedChildren() && $item->slug() != 'agenda'): ?>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="javascript:void(0);" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      <?= html($item->title()) ?>
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <?php foreach($item->children()->listed() as $child): ?>
-                      <a class="dropdown-item <?php e($child->isOpen(), 'active') ?>" href="<?= $child->url() ?>"><?= html($child->title()) ?></a>
-                      <?php endforeach ?>
-                    </div>
-                  </li>
-                <?php else: ?>
-                  <li class="nav-item">
-                    <a class="nav-link <?php e($item->isOpen(), 'active') ?>" href="<?= $item->url() ?>"><?= html($item->title()) ?></a>
-                  </li>
-                <?php endif ?>
+                <a href="<?= $item->url() ?>"><?= html($item->title()) ?></a>
               <?php endforeach ?>
             </ul>
           </div>

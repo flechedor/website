@@ -1,0 +1,33 @@
+Title: Agenda
+
+----
+
+Filters:
+
+- 
+  name: Streaming
+  color: '#880000'
+- 
+  name: Concert
+  color: '#F94144'
+- 
+  name: Spectacle
+  color: '#F8961E'
+- 
+  name: Projection
+  color: '#F9C74F'
+- 
+  name: Conférence/débat
+  color: '#90BE6D'
+- 
+  name: Atelier
+  color: '#008090'
+- 
+  name: Solidarité
+  color: '#F53FF2'
+- 
+  name: Restaurant
+  color: '#30A3FE'
+- 
+  name: Bar
+  color: '#03E0FB'
