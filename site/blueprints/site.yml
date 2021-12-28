@@ -19,7 +19,6 @@ tabs:
             status: draft
             create:
               - page
-              - page-with-subpages
             image:
               query: false
 
@@ -37,6 +36,9 @@ tabs:
                 type: textarea
                 size: medium
                 buttons: false
+              infos:
+                label: Adresse
+                type: textarea
 
       right:
         width: 1/2
@@ -52,6 +54,14 @@ tabs:
                 label: Facebook
                 type: url
                 icon: facebook
+              spotify:
+                label: Spotify
+                type: url
+                icon: spotify
+              openhours:
+                label: Horaires
+                type: textarea
+                size: medium
 
   configuration:
     label: Maintenance
