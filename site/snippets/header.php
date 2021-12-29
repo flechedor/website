@@ -28,6 +28,7 @@ if (!$kirby->user() && $site->maintenance()->isTrue() && $page->uid() != 'mainte
         <a href="<?= $item->url() ?>"><?= html($item->title()) ?></a>
       <?php endforeach ?>
     </nav>
+    <p>TODO:  Horaires d'ouverture</p>
   </menu>
 
   <?php $pageId = explode('/', $page->id()) ?>
