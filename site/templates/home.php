@@ -1,8 +1,7 @@
 <?= snippet('header') ?>
 
 <?php if ($events->count()) : ?>
-  <h2>Cette semaine à la flèche</h2>
-  <div class="events-container">
+  <div class="events-container" id="events" style="display:none">
     <?php foreach ($events as $event) : ?>
       <?= snippet('event_card', ['event' => $event]) ?>
     <?php endforeach; ?>
@@ -10,5 +9,10 @@
 <?php endif ?>
 
 <?= $page->htmlcontent()->kt(); ?>
+
+<script>
+  document.getElementById('next-events').after(document.getElementById('events'))
+  document.getElementById('events').style.display = "flex"
+</script>
 
 <?= snippet('footer') ?>
