@@ -1,0 +1,19 @@
+input,
+textarea {
+    background-color: transparent;
+    border: 1px solid var(--text-color);
+    padding: 8px;
+    color: var(--text-color);
+    display: block;
+    margin-bottom: 1rem;
+    width: 100%;
+    font: inherit;
+    border-radius: 0 !important;
+    outline: none !important;
+}
+
+::placeholder {
+    text-transform: uppercase;
+    color: var(--text-color);
+    opacity: .8;
+}

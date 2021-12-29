@@ -1,14 +1,13 @@
 <?php
-return function($kirby, $pages, $page) {
+return function ($kirby, $pages, $page) {
 
     $alert = null;
     $success = false;
     $data = false;
-
-    if($kirby->request()->is('POST') && get('submit')) {
+    if ($kirby->request()->is('POST')) {
 
         $token = get('csrf');
-        if(!empty(get('confirm')) || csrf($token) !== true) {
+        if (!empty(get('confirm')) || csrf($token) !== true) {
             go($page->url());
             exit;
         }
@@ -31,20 +30,19 @@ return function($kirby, $pages, $page) {
             'text'  => 'Veuillez entrer un texte entre 3 et 3000 caractères.'
         ];
 
-        // some of the data is invalid
-        if($invalid = invalid($data, $rules, $messages)) {
-            $alert = $invalid;
 
-            // the data is fine, let's send the email
+        if ($invalid = invalid($data, $rules, $messages)) {
+            // some of the data is invalid
+            $alert = $invalid;
         } else {
+            // the data is fine, let's send the email
             try {
                 $dest = $page->mailto()->toStructure();
-                foreach($dest as $d) {
-                    if(trim(strtolower($d->pole())) === "contact") {
+                foreach ($dest as $d) {
+                    if (trim(strtolower($d->pole())) === "contact") {
                         $to = $d->email()->toString();
                     }
                 }
-                //$to = $dest[0]->email()->toString();
                 $from = $page->mailfrom()->toBool() === true ? $data['email'] : $to;
 
                 $kirby->email([
@@ -59,7 +57,6 @@ return function($kirby, $pages, $page) {
                         'from'  => esc($data['email'])
                     ]
                 ]);
-
             } catch (Exception $error) {
                 $alert['error'] = "Le formulaire n'a pas pu être envoyé. $error";
             }

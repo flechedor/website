@@ -1,5 +1,6 @@
 @import '_layout.css';
 @import '_menu.css';
+@import '_form.css';
 :root {
     --primary-color: #f30608;
     --text-color: white;
@@ -14,6 +15,8 @@
 
 body {
     font-family: "Heading Now";
+    line-height: 1.2;
+    font-size: 18px;
 }
 
 * {
@@ -28,6 +31,9 @@ a {
 h1,
 h2 {
     text-transform: uppercase;
+    font-size: 1.7rem;
+    letter-spacing: 2px;
+    font-weight: bold;
 }
 
 figure {
@@ -36,4 +42,40 @@ figure {
 
 img {
     max-width: 100%;
+}
+
+button {
+    color: var(--primary-color);
+    font: inherit;
+    box-shadow: none;
+    border: none;
+    text-transform: uppercase;
+    background-size: cover !important;
+    padding: 6px 10px;
+    cursor: pointer;
+}
+
+button[data-shape="ENVOYER"] {
+    background: url('../img/buttons/ENVOYER.png');
+}
+
+button[type="submit"] {
+    margin: .5rem 0 1rem 0;
+}
+
+.alert {
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.alert+.alert {
+    margin-top: -2rem;
+}
+
+.alert.error {
+    background-color: var(--primary-color);
+}
+
+.alert.success {
+    background-color: var(--menu-color);
 }
