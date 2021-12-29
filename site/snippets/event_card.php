@@ -1,8 +1,14 @@
 <div class="event">
   <?php if ($cover = $event->vignette()->toImage()) : ?>
-    <?= $cover->clip() ?>
-    <!-- TODO use lazy load <img data-src="" class="lazyload"> -->
+    <!-- extract src attribute from HTML string -->
+    <?php preg_match('/src="([^"]+)"/', $cover->clip(), $src); ?>
+    <?php if (isset($src[1])) : ?>
+      <img data-src="<?= $src[1] ?>" class="lazyload">
+    <?php else : ?>
+      <?= $cover->clip() ?>
+    <?php endif ?>
   <?php endif ?>
+
   <div class="overlay">
     <div><?= $event->debut()->toDate('%d/%m') ?></div>
     <div>
