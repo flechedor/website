@@ -1,0 +1,145 @@
+Title: rad cartier
+
+----
+
+Eventid: eaacd49a11c800d13babeb4ab90b4e13
+
+----
+
+Created: 2021-12-13 14:40
+
+----
+
+Updated: 2021-12-23T11:39:57+01:00
+
+----
+
+Recurrent: false
+
+----
+
+Debut: 2022-01-13
+
+----
+
+Fin: 2022-01-13
+
+----
+
+Showtime: true
+
+----
+
+Opentime: 19:00
+
+----
+
+Closetime: 02:00
+
+----
+
+Headline: Release Party + guests
+
+----
+
+Description:
+
+2022 démarre fort, et nous sommes fier·e·s de démarrer cette nouvelle année avec des artistes qui montent fort et vite. Et pour ouvrir le bal, c'est rad cartier qui va faire chauffer la scène de la Flèche d'Or avec son tout nouvel EP "Vision Thermique".
+
+(columns...)
+
+**rad cartier** est un auteur, compositeur et interprète originaire d’Orléans. 
+
+Il trace aujourd’hui son chemin dans un univers musical où ses influences Cloud trap et Rap français se mêlent à une identité visuelle coloré, puissante et avant-gardiste. 
+
+rad cartier est un artiste aux multiples facettes à l’écriture parfaitement ciselée. Sa sensibilité artistique s’exprime aussi bien par son flow que par le chant. Il affirme aujourd’hui une nouvelle maturité artistique. Après le remarqué Street CD VT ZOOM paru début 2021, il participe à la comédie musicale "Baiser Mortel" à la Bourse du Commerce Pinault aux côtés de Lala &ce, apparaît dans la campagne de Marine Serre (Prix LVMH), ainsi que dans le dernier projet de Remi Besse pour Nowness. 
+
+Le 10 décembre, il a sorti le très attendu "**Vision Thermique**", un EP qui affirme sa singularité dans la scène musicale contemporaine.
+
+++++
+
+**rad cartier** : (link: https://www.youtube.com/channel/UCaX1s_fifc4BoOmATCGq6ag text: Youtube) \/ (link: https://www.instagram.com/rad.cartier/ text: Instagram) \/ (link: https://twitter.com/radtyboi text: Twitter) \/ (link: https://www.facebook.com/radcartier/ text: Facebook) \/ (link: https://open.spotify.com/artist/37060l8iXQAWuFo1g3RCQ6 text: Spotify) \/ (link: https://www.deezer.com/fr/artist/11526913 text: Deezer) \/ (link: https://music.apple.com/fr/artist/rad-cartier/1184927524 text: Apple Music) \/ (link: https://radcartier.lnk.to/VISION_THERMIQUE text: Vision Thermique) 
+
+**La Ligne Bleue Records** : (link: https://twitter.com/lalignebleuerec text: Twitter) \/ (link: https://www.instagram.com/lalignebleuerecords/ text: Instagram) \/ (link: https://www.facebook.com/LaLigneBleueRecords/ text: Facebook) \/ (link: https://www.lalignebleuerecords.com/ text: Site)
+
+(...columns)
+
+(columns...)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/lJRhalGl7SI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+++++
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/YffqbX1bvEE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+(...columns)
+
+---
+
+Guests annoncés bientôt
+
+---
+
+💰 Billetterie sur place à prix libre (prix conseillé 10€)
+💵 Pas de CB sur place
+👌 Accès Personnes à Mobilité Réduite par la terrasse
+💕 Les comportements oppressifs ne sont pas tolérés
+🤿 Port du masque obligatoire dans la file
+🌊 Gel hydroalcoolique sur place
+👮 L'accès est soumis à la présentation du pass-sanitaire (certificat de vaccination, test négatif (PCR ou antigénique) ou certificat de rétablissement du COVID.
+
+----
+
+Filters: Concert
+
+----
+
+Reservations: sans réservation
+
+----
+
+Cover: - rad-cartier-fb.jpg
+
+----
+
+Vignette:
+
+- 
+  id: >
+    agenda/2022-01-13-rad-cartier/rad-cartier-fb.jpg
+  clip:
+    width: 837
+    height: 628
+    left: 185
+    top: 0
+
+----
+
+Copycontent: false
+
+----
+
+Publishothers: false
+
+----
+
+Unpublishothers: false
+
+----
+
+Published: false
+
+----
+
+Debutadd: 2022-01-13T13:44:00.000Z
+
+----
+
+Finadd: 2022-01-13T13:44:00.000Z
+
+----
+
+Recurrentadd: 
+
+----
+
+Interval: 7
