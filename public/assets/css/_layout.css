@@ -23,4 +23,5 @@ main {
     color: var(--text-color);
     overflow-x: hidden;
     overflow-y: auto;
+    flex-grow: 1;
 }
