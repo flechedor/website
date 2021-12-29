@@ -4,7 +4,20 @@ menu {
     left: 0;
     height: 100vh;
     width: 50vw;
-    background: url('../img/background.png');
     background-repeat: repeat;
     background-size: contain;
+    /* color in pink while the image load */
+    background-color: var(--menu-color);
+}
+
+@media (max-width: 800px) {
+    menu {
+        background: url('../img/FOND ROSE_RESP.png');
+    }
+}
+
+@media (min-width: 801px) {
+    menu {
+        background: url('../img/FOND ROSE_DESKTOP.png');
+    }
 }

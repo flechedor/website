@@ -4,6 +4,16 @@
     --primary-color: #f30608;
     --text-color: white;
     --bg-color: black;
+    --menu-color: #fe6dda;
+}
+
+@font-face {
+    font-family: "Heading Now";
+    src: url("../fonts/Heading-Now-84-Regular/Heading-Now-84-Regular.ttf") format("truetype");
+}
+
+body {
+    font-family: "Heading Now";
 }
 
 * {

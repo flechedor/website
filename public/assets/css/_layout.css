@@ -1,7 +1,6 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: system-ui;
 }
 
 menu,
@@ -16,4 +15,5 @@ main {
     background-color: var(--bg-color);
     color: var(--text-color);
     margin-left: 50%;
+    overflow-x: hidden;
 }
