@@ -1,4 +1,4 @@
-<div class="event">
+<div class="event" data-filters="<?= $event->filters() ?>">
   <?php if ($cover = $event->vignette()->toImage()) : ?>
     <!-- extract src attribute from HTML string -->
     <?php preg_match('/src="([^"]+)"/', $cover->clip(), $src); ?>
@@ -18,9 +18,3 @@
     </div>
   </div>
 </div>
-
-<!-- TODO make filters work
-  <?php foreach ($event->filters()->toData() as $filter) : ?>
-    <?= $filter ?>
-  <?php endforeach; ?>
-  -->

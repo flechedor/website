@@ -23,3 +23,24 @@ menu nav a {
     text-transform: uppercase;
     margin: 1rem 0;
 }
+
+menu nav a.sub-item {
+    font-size: 1.5rem;
+    margin: .2rem 0;
+    position: relative;
+    cursor: pointer;
+}
+
+menu nav a.sub-item.active:after {
+    content: "";
+    background: url("../img/buttons/VALIDÉ (TEXTE).png");
+    display: inline-block;
+    height: 39px;
+    width: 50px;
+    transform: scale(.65);
+    transform-origin: center;
+    margin-left: 5px;
+    background-size: cover;
+    position: absolute;
+    bottom: -4px;
+}

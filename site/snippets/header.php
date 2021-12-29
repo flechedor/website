@@ -25,10 +25,19 @@ if (!$kirby->user() && $site->maintenance()->isTrue() && $page->uid() != 'mainte
     </a>
     <nav>
       <?php foreach ($site->children()->listed() as $item) : ?>
-        <a href="<?= $item->url() ?>"><?= html($item->title()) ?></a>
+        <a href="<?= $item->url() ?>" class="<?= $page->uid() == $item->uid() ? 'active' : '' ?>">
+          <?= html($item->title()) ?>
+        </a>
+
+        <!-- Agenda filters -->
+        <?php if ($page->uid() == "agenda" && $item->uid() == "agenda" && isset($filters)) : ?>
+          <?php foreach ($filters as $filter) : ?>
+            <a class="sub-item event-filter" data-filter="<?= $filter ?>"><?= $filter ?></a>
+          <?php endforeach ?>
+        <?php endif ?>
       <?php endforeach ?>
     </nav>
-    <p>TODO:  Horaires d'ouverture</p>
+    <p>TODO: Horaires d'ouverture</p>
   </menu>
 
   <?php $pageId = explode('/', $page->id()) ?>
