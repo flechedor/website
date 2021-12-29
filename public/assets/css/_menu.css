@@ -21,3 +21,10 @@ menu {
         background: url('../img/FOND ROSE_DESKTOP.png');
     }
 }
+
+menu nav a {
+    display: block;
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin: 1rem 0;
+}
