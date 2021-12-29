@@ -1,0 +1,37 @@
+.events-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+}
+
+.event {
+    width: 50%;
+    cursor: pointer;
+    position: relative;
+}
+
+.event img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.event .overlay {
+    display: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bold;
+    flex-direction: column;
+    line-height: 1.3;
+}
+
+.event:hover .overlay {
+    display: flex;
+}

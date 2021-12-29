@@ -7,7 +7,6 @@ columns:
       description:
         type: fields
         fields:
-
           eventid:
             type: hidden
           created:
@@ -61,8 +60,7 @@ columns:
               showtime: true
           headline:
             type: text
-            label: Entête
-            help: Apparait sous le titre dans l'agenda et dans la fiche
+            label: Sous Titre
           description:
             label: Description
             type: textarea
@@ -81,8 +79,8 @@ columns:
             options: query
             query:
               fetch: page.parent.filters.toStructure
-              text: '{{ structureItem.name }}'
-              value: '{{ structureItem.name }}'
+              text: "{{ structureItem.name }}"
+              value: "{{ structureItem.name }}"
           reservations:
             type: select
             default: "sans réservation"
@@ -94,26 +92,16 @@ columns:
       visuel:
         type: fields
         fields:
-          cover:
-            label: Image principale
-            type: files
-            layout: cards
-            size: small
-            max: 1
-            help: 1000px de large minimum (si possible...), 72p, RVB
           vignette:
             type: image-clip
             layout: cards
             size: tiny
             max: 1
-            help: |
-              pour la home, 480*360px min (format 4:3), 72p, RVB
-              Vous pouvez redimensionner l'image au bon format via l'icône en haut à gauche au survol.
+            help: Redimensionnez l'image pour l'affiche en mode liste (icone en haut à gauche au survol)
             clip:
               minwidth: 480
               minheight: 360
               ratio: fixed
-
 
       files:
         type: files
@@ -203,5 +191,3 @@ addFields:
     text: Lorsque la fiche est récurrente, la date de fin et l'interval permettent de calculer le nombre d'événements à créer.
     when:
       recurrentadd: true
-
-

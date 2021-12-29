@@ -1,6 +1,7 @@
 @import '_layout.css';
 @import '_menu.css';
 @import '_form.css';
+@import '_event.css';
 :root {
     --primary-color: #f30608;
     --text-color: white;
