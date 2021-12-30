@@ -1,6 +1,6 @@
 // Highlight title on scroll
 const main = document.querySelector('main.content')
-if (!main.classList.contains('page-agenda') && !main.classList.contains('page-contact')) {
+if (!main.classList.contains('page-agenda') && !main.classList.contains('page-event') && !main.classList.contains('page-contact')) {
     const titles = main.querySelectorAll('h1, h2')
     const activeMenuItem = document.querySelector('menu a.active + .sub-items')
     let titleId = 0

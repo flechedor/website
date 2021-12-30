@@ -5,12 +5,12 @@ use Kirby\Cms\Page;
 class EventPage extends Page
 {
 
-    public function formatedDate()
+    public function formatedDate($fullDisplay = false)
     {
         $start = $this->debut();
         $end = $this->fin();
         if ($end->toDate() == $start->toDate()) {
-            return "{$this->formatDate($start, 'ccc dd/MM')}";
+            return "{$this->formatDate($start,$fullDisplay ? 'cccc dd/MM' : 'ccc dd/MM')}";
         } else {
             return "{$this->formatDate($start, 'DD/MM')} - {$this->formatDate($end, 'DD/MM')}";
         }

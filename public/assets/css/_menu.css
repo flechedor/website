@@ -16,13 +16,18 @@ menu {
 }
 
 menu nav a {
-    display: block;
+    display: inline-block;
     font-size: 2rem;
     text-transform: uppercase;
-    margin: 1rem 0;
+    margin: .5rem 0;
+}
+
+menu nav a:not(.sub-item).active {
+    background-color: white;
 }
 
 menu nav a.sub-item {
+    display: block;
     font-size: 1.4rem;
     margin: .2rem 0;
     position: relative;

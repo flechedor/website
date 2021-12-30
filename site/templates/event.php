@@ -6,7 +6,7 @@
 </a>
 <!-- Date -->
 <h2 class="event-date">
-  <span><?= "{$page->formatedDate()} {$page->formatedTime()}" ?></span>
+  <span><?= "{$page->formatedDate(true)} {$page->formatedTime()}" ?></span>
 </h2>
 <!-- Title -->
 <h1 class="event-title"><?= $page->title() ?></h1>

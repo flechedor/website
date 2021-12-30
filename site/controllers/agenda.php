@@ -20,15 +20,7 @@ return function ($kirby, $pages, $page) {
         $groupedEvents[$month][] = $event;
     }
 
-    $filters = [];
-    foreach ($events as $event) {
-        foreach ($event->filters()->toData() as $filter)
-            $filters[] = $filter;
-    }
-    $filters = array_unique($filters);
-
     return [
         'groupedEvents' => $groupedEvents,
-        'filters' => $filters
     ];
 };
