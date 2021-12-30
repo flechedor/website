@@ -1,8 +1,6 @@
 menu {
     background-repeat: repeat;
     background-size: cover !important;
-    /* color in pink while the image load */
-    background-color: var(--menu-color);
 }
 
 @media (max-width: 800px) {

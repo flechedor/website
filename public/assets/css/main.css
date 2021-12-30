@@ -23,6 +23,8 @@ body {
     font-family: "Heading Now";
     line-height: 1.2;
     font-size: 18px;
+    /* color in pink while the image load */
+    background-color: var(--menu-color);
 }
 
 * {
