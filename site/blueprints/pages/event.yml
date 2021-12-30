@@ -38,26 +38,14 @@ columns:
             min: 2020-08-01
             max: 2025-12-31
             width: 1/2
-          showtime:
-            type: toggle
-            default: false
-            label: Montrer les horaires sous la date
-            width: 1/3
-            text:
-              - non
-              - oui
           opentime:
             type: time
             label: Heure d'ouverture
             width: 1/3
-            when:
-              showtime: true
           closetime:
             type: time
             label: Heure de fermeture
             width: 1/3
-            when:
-              showtime: true
           headline:
             type: text
             label: Sous Titre
@@ -73,7 +61,7 @@ columns:
         type: fields
         fields:
           filters:
-            label: Filtres
+            label: Catégories
             type: multiselect
             accept: options
             options: query
@@ -103,6 +91,9 @@ columns:
               minwidth: 480
               minheight: 360
               ratio: fixed
+          attribution:
+            type: text
+            label: Crédit / descriptif de l'image
 
       files:
         type: files

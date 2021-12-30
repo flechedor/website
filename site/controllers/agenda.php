@@ -15,9 +15,9 @@ return function ($kirby, $pages, $page) {
     // group by month
     $groupedEvents = [];
     foreach ($events as $event) {
-        if (!array_key_exists($event->monthDate(), $groupedEvents))
-            $groupedEvents[$event->monthDate()] = [];
-        $groupedEvents[$event->monthDate()][] = $event;
+        $month = $event->formatedMonth();
+        if (!array_key_exists($month, $groupedEvents)) $groupedEvents[$month] = [];
+        $groupedEvents[$month][] = $event;
     }
 
     $filters = [];

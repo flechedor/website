@@ -5,45 +5,42 @@ use Kirby\Cms\Page;
 class EventPage extends Page
 {
 
-    public function formatDate()
+    public function formatedDate()
     {
-        date_default_timezone_set('Europe/Paris');
-        setlocale(LC_TIME, 'fr_FR');
-        $start = $this->content()->get('debut');
-        $end = $this->content()->get('fin');
-        if ($end->toDate() > $start->toDate()) {
-            if ($start->toDate('%m') == $end->toDate('%m')) {
-                $date = "Du " . $start->toDate('%d') . " au " . $end->toDate('%d') . " " . $start->toDate('%B %Y');
-            } else {
-                if ($start->toDate('%Y') == $end->toDate('%Y')) {
-                    $date = "Du " . $start->toDate('%d') . " " . $start->toDate('%B') . " au " . $end->toDate('%d') . " " . $end->toDate('%B %Y');
-                } else {
-                    $date = "Du " . $start->toDate('%d') . " " . $start->toDate('%B %Y') . " au " . $end->toDate('%d') . " " . $end->toDate('%B %Y');
-                }
-            }
+        $start = $this->debut();
+        $end = $this->fin();
+        if ($end->toDate() == $start->toDate()) {
+            return "{$this->formatDate($start, 'ccc dd/MM')}";
         } else {
-            $date = utf8_encode($start->toDate('%A %d %B %Y'));
-            $tmp = explode(' ', $date);
-            $tmp[0] = '<span class="day">' . $tmp[0] . '</span>';
-            $date = join(' ', $tmp);
+            return "{$this->formatDate($start, 'DD/MM')} - {$this->formatDate($end, 'DD/MM')}";
         }
-
-        if ($this->content()->get('showtime')->toBool()) {
-            if ($this->content()->get('closetime')->isNotEmpty()) {
-                $date .= '<small class="time">De ' . $this->content()->get('opentime')->toDate('%H:%M') . ' à ' . $this->content()->get('closetime')->toDate('%H:%M') . '</small>';
-            } else {
-                $date .= '<small class="time">À partir de ' . $this->content()->get('opentime')->toDate('%H:%M') . '</small>';
-            }
-        }
-
-        return htmlspecialchars($date);
     }
 
-    public function monthDate()
+    public function formatedTime($displayFull = false)
     {
-        $start = $this->content()->get('debut');
+        $start = $this->formatHour($this->opentime());
+        $end = $this->formatHour($this->closetime());
+        $result = $start;
+        if ($end && $displayFull) $result .= " - $end";
+        return $result;
+    }
+
+    public function formatedMonth()
+    {
+        return $this->formatDate($this->debut(), 'MMMM yyyy');
+    }
+
+    private function formatHour($datetime)
+    {
+        $minutes = $datetime->toDate('%M');
+        // Display 17H instead of 17h00
+        return $datetime->toDate('%HH') . ($minutes == '00' ? '' : $minutes);
+    }
+
+    private function formatDate($date, $format)
+    {
         $fmt = new \IntlDateFormatter('fr_FR', 0, 0);
-        $fmt->setPattern('MMMM yyyy');
-        return $fmt->format($start->toDate());
+        $fmt->setPattern($format);
+        return $fmt->format($date->toDate());
     }
 }

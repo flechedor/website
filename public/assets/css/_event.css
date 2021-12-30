@@ -21,6 +21,10 @@
     visibility: hidden;
 }
 
+.event-back img {
+    height: 2.5rem;
+}
+
 .event .overlay {
     display: none;
     position: absolute;
@@ -29,6 +33,7 @@
     left: 0;
     right: 0;
     background-color: rgba(0, 0, 0, 0.5);
+    color: var(--text-color);
     justify-content: center;
     align-items: center;
     font-size: 2rem;
@@ -39,4 +44,21 @@
 
 .event:hover .overlay {
     display: flex;
+}
+
+.event-title {
+    margin-top: -1rem;
+}
+
+.event-date {
+    margin-top: .5rem;
+}
+
+.event-title,
+.event-date {
+    font-size: 1.8rem;
+}
+
+.event-headline {
+    margin-top: -1rem;
 }

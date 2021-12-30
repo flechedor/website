@@ -1,4 +1,4 @@
-<div class="event" data-filters="<?= $event->filters() ?>">
+<a class="event" data-filters="<?= $event->filters() ?>" href="<?= $event->url() ?>">
   <?php if ($cover = $event->vignette()->toImage()) : ?>
     <!-- extract src attribute from HTML string -->
     <?php preg_match('/src="([^"]+)"/', $cover->clip(), $src); ?>
@@ -10,11 +10,7 @@
   <?php endif ?>
 
   <div class="overlay">
-    <div><?= $event->debut()->toDate('%d/%m') ?></div>
-    <div>
-      <?php $minutes = $event->opentime()->toDate('%M') ?>
-      <!-- Display 17H instead of 17h00 -->
-      <?= $event->opentime()->toDate('%HH') . ($minutes == '00' ? '' : $minutes) ?>
-    </div>
+    <div><?= $event->formatedDate() ?></div>
+    <div><?= $event->formatedTime() ?></div>
   </div>
-</div>
+</a>
