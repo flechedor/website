@@ -26,8 +26,8 @@ columns:
     searchable: true
     width: 1/6
   filters:
-    label: Filtres
-    text: "{{ page.filters.toColors }}"
+    label: Catégories
+    text: "{{ page.filters }}"
     #width: 1/6
   recurrent:
     label: Récurrent

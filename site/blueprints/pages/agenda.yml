@@ -34,8 +34,8 @@ columns:
             sortable: true
             searchable: true
           filters:
-            label: Filtres
-            text: "{{ page.filters.toColors }}"
+            label: Catégories
+            text: "{{ page.filters }}"
           recurrent:
             label: Récurrent
             type: boolean
@@ -98,17 +98,3 @@ columns:
                 type: text
                 label: Nom
                 required: true
-              color:
-                type: color
-                label: Couleur
-                editableAlpha: false
-                presets:
-                  - "#F94144"
-                  - "#F3722C"
-                  - "#F8961E"
-                  - "#F9C74F"
-                  - "#90BE6D"
-                  - "#43AA8B"
-                  - "#008090"
-                  - "#2B6A9E"
-                  - "#6F54A0"
