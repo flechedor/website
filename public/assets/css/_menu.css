@@ -25,10 +25,19 @@ menu nav a {
 }
 
 menu nav a.sub-item {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     margin: .2rem 0;
     position: relative;
     cursor: pointer;
+}
+
+.agenda-filters {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.agenda-filters a.sub-item {
+    width: 50%;
 }
 
 menu nav a.sub-item.active:after {

@@ -1,12 +1,15 @@
 <?= snippet('header') ?>
 
-<?php if ($events->count()) : ?>
-  <div class="events-container" id="events" style="display:none">
+<div class="events-container" id="events" style="display:none">
+  <?php if ($events->count()) : ?>
     <?php foreach ($events as $event) : ?>
       <?= snippet('event_card', ['event' => $event]) ?>
     <?php endforeach; ?>
-  </div>
-<?php endif ?>
+  <?php else : ?>
+    <p class="empty">Aucun événement programmé</p>
+  <?php endif ?>
+</div>
+
 
 <?= $page->htmlcontent()->kt(); ?>
 

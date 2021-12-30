@@ -97,6 +97,7 @@ columns:
             layout: cards
             size: tiny
             max: 1
+            required: true
             help: Redimensionnez l'image pour l'affiche en mode liste (icone en haut à gauche au survol)
             clip:
               minwidth: 480

@@ -31,9 +31,11 @@ if (!$kirby->user() && $site->maintenance()->isTrue() && $page->uid() != 'mainte
 
         <!-- Agenda filters -->
         <?php if ($page->uid() == "agenda" && $item->uid() == "agenda" && isset($filters)) : ?>
-          <?php foreach ($filters as $filter) : ?>
-            <a class="sub-item event-filter" data-filter="<?= $filter ?>"><?= $filter ?></a>
-          <?php endforeach ?>
+          <div class="agenda-filters">
+            <?php foreach ($filters as $filter) : ?>
+              <a class="sub-item event-filter" data-filter="<?= $filter ?>"><?= $filter ?></a>
+            <?php endforeach ?>
+          </div>
         <?php endif ?>
       <?php endforeach ?>
     </nav>

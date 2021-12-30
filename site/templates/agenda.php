@@ -1,16 +1,18 @@
 <?php snippet('header'); ?>
 
+<!-- TODO group by week -->
 <div class="events-container">
   <?php if (count($events)) : ?>
     <?php foreach ($events as $event) : ?>
       <?= snippet('event_card', ['event' => $event]) ?>
     <?php endforeach ?>
   <?php else : ?>
-    <p class="empty">Aucun événement programmé.</p>
+    <p class="empty">Aucun événement programmé</p>
   <?php endif; ?>
 </div>
 
 <script>
+  // Filter events by category
   document.querySelectorAll('.event-filter').forEach(filter => {
     filter.addEventListener('click', function() {
       if (this.classList.contains('active')) {

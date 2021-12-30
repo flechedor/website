@@ -1,0 +1,94 @@
+Title: Test
+
+----
+
+Eventid: 1cddeaa97981de0fc63665fb2d1af49e
+
+----
+
+Created: 2021-12-30 08:40
+
+----
+
+Updated: 2021-12-30T08:58:55+01:00
+
+----
+
+Recurrent: false
+
+----
+
+Debut: 2022-02-04
+
+----
+
+Fin: 2022-02-04
+
+----
+
+Showtime: false
+
+----
+
+Opentime: 
+
+----
+
+Closetime: 
+
+----
+
+Headline: 
+
+----
+
+Description: yoyo
+
+----
+
+Filters: Projection
+
+----
+
+Reservations: sans réservation
+
+----
+
+Vignette:
+
+- 
+  id: >
+    agenda/2022-02-04-test/capture-decran-de-2021-09-06-01-23-32.png
+  clip:
+    width: 632
+    height: 475
+    left: 650
+    top: 486
+
+----
+
+Copycontent: false
+
+----
+
+Publishothers: false
+
+----
+
+Unpublishothers: false
+
+----
+
+Published: false
+
+----
+
+Debutadd: 2022-02-04T07:43:00.000Z
+
+----
+
+Recurrentadd: 
+
+----
+
+Interval: 7

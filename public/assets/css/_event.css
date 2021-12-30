@@ -16,6 +16,11 @@
     object-fit: cover;
 }
 
+.event img:not(.lazyloaded) {
+    /* Prevent displaying empty img box with white border */
+    visibility: hidden;
+}
+
 .event .overlay {
     display: none;
     position: absolute;
