@@ -16,13 +16,9 @@ class EventPage extends Page
         }
     }
 
-    public function formatedTime($displayFull = false)
+    public function formatedTime()
     {
-        $start = $this->formatHour($this->opentime());
-        $end = $this->formatHour($this->closetime());
-        $result = $start;
-        if ($end && $displayFull) $result .= " - $end";
-        return $result;
+        return $this->formatHour($this->opentime());
     }
 
     public function formatedMonth()

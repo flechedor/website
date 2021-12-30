@@ -42,10 +42,6 @@ columns:
             type: time
             label: Heure d'ouverture
             width: 1/3
-          closetime:
-            type: time
-            label: Heure de fermeture
-            width: 1/3
           headline:
             type: text
             label: Sous Titre
