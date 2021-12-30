@@ -12,7 +12,7 @@ translations:
 columns:
   title:
     label: Quoi
-    text: '{{ page.title }}'
+    text: "{{ page.title }}"
     sortable: true
     searchable: true
     width: 1/3
@@ -20,29 +20,20 @@ columns:
     type: date
     label: Quand
     text: '{{ page.debut.toDate("%Y-%m-%d") }}'
-    dateInputFormat: 'YYYY-MM-DD'
-    dateOutputFormat: 'dddd D MMMMM YYYY'
+    dateInputFormat: "YYYY-MM-DD"
+    dateOutputFormat: "dddd D MMMMM YYYY"
     sortable: true
     searchable: true
     width: 1/6
   filters:
     label: Filtres
-    text: '{{ page.filters.toColors }}'
-    #width: 1/6
-  reservations:
-    label: Réservations
-    text: '{{ page.reservations }}'
-    searchable: true
-    sortable: true
+    text: "{{ page.filters.toColors }}"
     #width: 1/6
   recurrent:
     label: Récurrent
     type: boolean
-    text: '{{ page.recurrent.boolToStr }}'
+    text: "{{ page.recurrent.boolToStr }}"
     sortable: true
     searchable: true
     #width: 1/6
-
-
-
 #info: '{{ page.debut.toDate("%Y-%m-%d") }} // {{ page.tags }} // {{ page.frequency }}'

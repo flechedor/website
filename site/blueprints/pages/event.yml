@@ -69,14 +69,6 @@ columns:
               fetch: page.parent.filters.toStructure
               text: "{{ structureItem.name }}"
               value: "{{ structureItem.name }}"
-          reservations:
-            type: select
-            default: "sans réservation"
-            options:
-              "sans réservation": Sans réservation
-              "avec réservation": Avec réservation
-              complet: Complet
-              "annulé": Annulé
       visuel:
         type: fields
         fields:
