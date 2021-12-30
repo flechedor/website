@@ -12,6 +12,14 @@ return function ($kirby, $pages, $page) {
         $events = $page->children()->listed()->filterBy('fin', 'date >=', date('Y-m-d'))->sortBy('debut', 'asc');
     }
 
+    // group by month
+    $groupedEvents = [];
+    foreach ($events as $event) {
+        if (!array_key_exists($event->monthDate(), $groupedEvents))
+            $groupedEvents[$event->monthDate()] = [];
+        $groupedEvents[$event->monthDate()][] = $event;
+    }
+
     $filters = [];
     foreach ($events as $event) {
         foreach ($event->filters()->toData() as $filter)
@@ -20,7 +28,7 @@ return function ($kirby, $pages, $page) {
     $filters = array_unique($filters);
 
     return [
-        'events' => $events,
+        'groupedEvents' => $groupedEvents,
         'filters' => $filters
     ];
 };

@@ -1,15 +1,17 @@
 <?php snippet('header'); ?>
 
-<!-- TODO group by week -->
-<div class="events-container">
-  <?php if (count($events)) : ?>
-    <?php foreach ($events as $event) : ?>
-      <?= snippet('event_card', ['event' => $event]) ?>
-    <?php endforeach ?>
-  <?php else : ?>
-    <p class="empty">Aucun événement programmé</p>
-  <?php endif; ?>
-</div>
+<?php if (count($groupedEvents)) : ?>
+  <?php foreach ($groupedEvents as $title => $events) : ?>
+    <div class="events-container">
+      <h2><?= $title ?></h2>
+      <?php foreach ($events as $event) : ?>
+        <?= snippet('event_card', ['event' => $event]) ?>
+      <?php endforeach ?>
+    </div>
+  <?php endforeach ?>
+<?php else : ?>
+  <p class="empty">Aucun événement programmé</p>
+<?php endif; ?>
 
 <script>
   // Filter events by category
@@ -30,6 +32,12 @@
           event.style.display = event.dataset['filters'].includes(this.dataset['filter']) ? "block" : "none"
         })
       }
+
+      // Hide empty events-container
+      document.querySelectorAll('.events-container').forEach((eventsContainer) => {
+        let show = eventsContainer.querySelectorAll('.event:not([style*="display:none"]):not([style*="display: none"])').length > 0
+        eventsContainer.style.display = show ? "flex" : "none"
+      })
     })
   })
 </script>
