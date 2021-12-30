@@ -28,6 +28,9 @@ if (!$kirby->user() && $site->maintenance()->isTrue() && $page->uid() != 'mainte
         <a href="<?= $item->url() ?>" class="<?= $page->uid() == $item->uid() ? 'active' : '' ?>">
           <?= html($item->title()) ?>
         </a>
+        <div class="sub-items">
+          <!-- Dynamically populated by javascript based on content titles -->
+        </div>
 
         <!-- Agenda filters -->
         <?php if ($page->uid() == "agenda" && $item->uid() == "agenda" && isset($filters)) : ?>
