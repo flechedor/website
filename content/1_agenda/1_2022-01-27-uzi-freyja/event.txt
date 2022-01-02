@@ -1,0 +1,146 @@
+Title: Uzi Freyja
+
+----
+
+Eventid: 73d1295b36a7856f5e0db3ca0a355a04
+
+----
+
+Created: 2021-12-13 14:05
+
+----
+
+Updated: 2021-12-29T15:16:03+01:00
+
+----
+
+Recurrent: false
+
+----
+
+Debut: 2022-01-27
+
+----
+
+Fin: 2022-01-27
+
+----
+
+Showtime: false
+
+----
+
+Opentime: 
+
+----
+
+Closetime: 
+
+----
+
+Headline: + Guest
+
+----
+
+Description:
+
+(columns...)
+
+**Uzi Freyja** est né de la rencontre entre **Kelly Rose **et **Stuntman5** lors d’un ‘open mic’ dans les rues de Nantes. Le flow et l'énergie de la Parisienne anglophone d’origine camerounaise met tout le monde d’accord : Ils entament une collaboration le soir même et seront rapidement rejoints par **FotonDanger** pour former un trio.
+
+Kelly Rose a été élevée par une famille de musiciens dans la culture du Gospel et de la Soul Music (James, Franklin, Turner, Simone). Adolescente, elle voit le hip hop venir à elle comme une évidence : Eminem, Queen latifah puis Nicki Minaj, la confortent dans son envie de chanter et de faire du rap. De freestyles dans sa chambre en karaokés, c’est au lycée, dans le cadre d’un atelier musical, qu’elle s’exprime pour la première fois. Quelques années plus tard, elle s’immerge dans un environnement d’artistes, de danseurs, peintres et chanteurs ...
+
+La musique d’Uzi Freyja ce sont des textes à la fois engagés et sensuels, sur des prods influencées par des artistes comme Death grips ou Ho99o9, chers au label (link: https://www.warriorecords.com text: WARRIORECORDS).
+
+++++
+
+**UZI FREYJA** est une formation française née en 2019
+**Kelly Rose**, auteure et interprète 
+**Stuntman5** et **FotonDanger**, producteurs
+
+(...columns)
+
+**Pour suivre Uzi Freyja**
+(link: https://instagram.com/uzi_freyja text: INSTAGRAM) \/ (link: https://www.facebook.com/uzifreyja text: FACEBOOK) \/  (link: https://soundcloud.com/uzifreyja text: SOUNDCLOUD)
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/BddWcE2UU48" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+---
+
+Guest annoncé bientôt
+
+---
+
+
+💰 Billetterie sur place à prix libre (prix conseillé 5€)
+💵 Pas de CB sur place
+👌 Accès Personnes à Mobilité Réduite par la terrasse
+💕 Les comportements oppressifs ne sont pas tolérés
+🤿 Port du masque obligatoire dans la file
+🌊 Gel hydroalcoolique sur place
+👮 L'accès est soumis à la présentation du pass-sanitaire (certificat de vaccination, test négatif (PCR ou antigénique) ou certificat de rétablissement du COVID.
+
+---
+La Flèche d'Or est un lieu politique, culturel et de solidarité. La programmation y est élaborée collectivement et nous avons à cœur de construire une gouvernance la plus collective, horizontale et participative possible.
+
+---
+
+*Photo de couverture ©Catherine / workingonmyname*
+
+----
+
+Filters: Concert
+
+----
+
+Reservations: sans réservation
+
+----
+
+Cover: 
+
+----
+
+Vignette:
+
+- 
+  id: >
+    agenda/2022-01-27-uzi-freyja/visue-uzi-fb.jpg
+  clip:
+    width: 521
+    height: 391
+    left: 335
+    top: 237
+
+----
+
+Copycontent: false
+
+----
+
+Publishothers: false
+
+----
+
+Unpublishothers: false
+
+----
+
+Published: false
+
+----
+
+Debutadd: 2022-01-27T13:07:00.000Z
+
+----
+
+Finadd: 2022-01-27T13:07:00.000Z
+
+----
+
+Recurrentadd: 
+
+----
+
+Interval: 7

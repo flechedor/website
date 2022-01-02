@@ -17,7 +17,7 @@ Filters:
   name: Projection
   color: '#F9C74F'
 - 
-  name: Conférence/débat
+  name: Débat/Conf
   color: '#90BE6D'
 - 
   name: Atelier

@@ -4,6 +4,9 @@ Title: Bienvenue à la Flèche d’Or !
 
 Htmlcontent:
 
+## Prochainement à la flèche
+<div id="next-events"></div> <!-- Cette ligne permet d'insérer la liste des prochains événements à l'endroit voulu -->
+
 ## Notre Histoire
 
 Depuis août 2020, la Flèche d’Or est occupée par un collectif qui entend faire de ce lieu historique un espace de vie non marchand, culturel et solidaire au service du quartier et des luttes sociales.

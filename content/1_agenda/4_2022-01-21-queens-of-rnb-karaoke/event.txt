@@ -1,0 +1,113 @@
+Title: Queens of RNB
+
+----
+
+Eventid: e871c285a97a758d9b1fd2919bff1db2
+
+----
+
+Created: 2021-12-23 12:50
+
+----
+
+Updated: 2021-12-23T12:55:23+01:00
+
+----
+
+Recurrent: false
+
+----
+
+Debut: 2022-01-21
+
+----
+
+Fin: 2022-01-21
+
+----
+
+Showtime: true
+
+----
+
+Opentime: 20:00
+
+----
+
+Closetime: 02:00
+
+----
+
+Headline: Karaoké
+
+----
+
+Description:
+
+Faites places, les plus grandes queens du RNB arrivent à la Flèche d'Or le 21 janvier.
+Il est temps de réviser vos classiques pour faire honneurs à celles qui rule the world !
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+💫 Billetterie sur place à prix libre (prix conseillé 5€)
+💸 Pas de CB sur place
+👌 Accès Personnes à Mobilité Réduite par la terrasse
+💞 Les comportements oppressifs ne sont pas tolérés
+🤿 Port du masque obligatoire
+💦 Gel hydroalcoolique sur place
+👮‍♂️ L'accès est soumis à la présentation du pass-sanitaire (certificat de vaccination, test négatif (PCR ou antigénique) ou certificat de rétablissement du COVID.
+
+----
+
+Filters: Spectacle, Concert
+
+----
+
+Reservations: sans réservation
+
+----
+
+Cover: - karaok-queens-fb.jpg
+
+----
+
+Vignette:
+
+- 
+  id: >
+    agenda/2022-01-21-queens-of-rnb-karaoke/karaok-queens-fb.jpg
+  clip:
+    width: 836
+    height: 628
+    left: 184
+    top: 0
+
+----
+
+Copycontent: false
+
+----
+
+Publishothers: false
+
+----
+
+Unpublishothers: false
+
+----
+
+Published: false
+
+----
+
+Debutadd: 2022-01-21T11:54:00.000Z
+
+----
+
+Finadd: 2022-01-21T11:54:00.000Z
+
+----
+
+Recurrentadd: 
+
+----
+
+Interval: 7

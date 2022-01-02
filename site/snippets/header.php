@@ -18,6 +18,8 @@ if (!$kirby->user() && $site->maintenance()->isTrue() && $page->uid() != 'mainte
   <?= css('assets/css/main.css') ?>
 </head>
 
+<?php $isEvent = $page->parent() && $page->parent()->uid() == "agenda" ?>
+
 <body>
   <menu>
     <a href="<?= $site->url() ?>">
@@ -25,11 +27,29 @@ if (!$kirby->user() && $site->maintenance()->isTrue() && $page->uid() != 'mainte
     </a>
     <nav>
       <?php foreach ($site->children()->listed() as $item) : ?>
-        <a href="<?= $item->url() ?>"><?= html($item->title()) ?></a>
+        <?php $isAgendaOrEvent = ($page->uid() == "agenda" || $isEvent) && $item->uid() == "agenda" ?>
+        <a href="<?= $item->url() ?>" class="<?= ($page->uid() == $item->uid() || $isAgendaOrEvent) ? 'active' : '' ?>">
+          <?= html($item->title()) ?>
+        </a>
+        <div class="sub-items">
+          <!-- Dynamically populated by javascript based on content titles -->
+        </div>
+
+        <!-- Agenda filters -->
+        <?php if ($isAgendaOrEvent) : ?>
+          <div class="agenda-filters">
+            <?php $filters = $isEvent ? $page->parent()->filters() : $page->filters() ?>
+            <?php foreach ($filters->yaml() as $filter) : ?>
+              <?php $active = $isEvent && strpos($page->filters(), $filter['name']) !== false ?>
+              <a class="sub-item event-filter <?= $active ? 'active' : '' ?>" data-filter="<?= $filter['name'] ?>">
+                <?= $filter['name'] ?>
+              </a>
+            <?php endforeach ?>
+          </div>
+        <?php endif ?>
       <?php endforeach ?>
     </nav>
-    <p>TODO:  Horaires d'ouverture</p>
+    <p>TODO: Horaires d'ouverture</p>
   </menu>
 
-  <?php $pageId = explode('/', $page->id()) ?>
-  <main class="content page-<?= array_pop($pageId) ?>">
+  <main class="content page-<?= $page->uid() ?> <?= $isEvent ? 'page-event' : '' ?>">

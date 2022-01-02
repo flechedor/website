@@ -1,13 +1,6 @@
 menu {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 50vw;
     background-repeat: repeat;
-    background-size: contain;
-    /* color in pink while the image load */
-    background-color: var(--menu-color);
+    background-size: cover !important;
 }
 
 @media (max-width: 800px) {
@@ -23,8 +16,43 @@ menu {
 }
 
 menu nav a {
-    display: block;
+    display: inline-block;
     font-size: 2rem;
     text-transform: uppercase;
-    margin: 1rem 0;
+    margin: .5rem 0;
+}
+
+menu nav a:not(.sub-item).active {
+    background-color: white;
+}
+
+menu nav a.sub-item {
+    display: block;
+    font-size: 1.4rem;
+    margin: .2rem 0;
+    position: relative;
+    cursor: pointer;
+}
+
+.agenda-filters {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.agenda-filters a.sub-item {
+    width: 50%;
+}
+
+menu nav a.sub-item.active:after {
+    content: "";
+    background: url("../img/buttons/VALIDÉ (TEXTE).png");
+    display: inline-block;
+    height: 39px;
+    width: 50px;
+    transform: scale(.65);
+    transform-origin: center;
+    margin-left: 5px;
+    background-size: cover;
+    position: absolute;
+    bottom: -4px;
 }

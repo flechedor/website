@@ -21,7 +21,7 @@ columns:
         columns:
           title:
             label: Quoi
-            text: '{{ page.title }}'
+            text: "{{ page.title }}"
             sortable: true
             searchable: true
             width: 1/3
@@ -29,22 +29,17 @@ columns:
             type: date
             label: Quand
             text: '{{ page.debut.toDate("%Y-%m-%d") }}'
-            dateInputFormat: 'YYYY-MM-DD'
-            dateOutputFormat: 'dddd D MMMMM YYYY'
+            dateInputFormat: "YYYY-MM-DD"
+            dateOutputFormat: "dddd D MMMMM YYYY"
             sortable: true
             searchable: true
           filters:
-            label: Filtres
-            text: '{{ page.filters.toColors }}'
-          reservations:
-            label: Réservations
-            text: '{{ page.reservations }}'
-            searchable: true
-            sortable: true
+            label: Catégories
+            text: "{{ page.filters }}"
           recurrent:
             label: Récurrent
             type: boolean
-            text: '{{ page.recurrent.boolToStr }}'
+            text: "{{ page.recurrent.boolToStr }}"
             sortable: true
             searchable: true
   - width: 2/3
@@ -65,7 +60,7 @@ columns:
         columns:
           title:
             label: Quoi
-            text: '{{ page.title }}'
+            text: "{{ page.title }}"
             sortable: true
             searchable: true
             width: 1/2
@@ -73,22 +68,22 @@ columns:
             type: date
             label: Quand
             text: '{{ page.debut.toDate("%Y-%m-%d") }}'
-            dateInputFormat: 'YYYY-MM-DD'
-            dateOutputFormat: 'D MMMMM YYYY'
+            dateInputFormat: "YYYY-MM-DD"
+            dateOutputFormat: "D MMMMM YYYY"
             sortable: true
             searchable: true
           recurrent:
             label: Récurrent
             type: boolean
-            text: '{{ page.recurrent.boolToStr }}'
+            text: "{{ page.recurrent.boolToStr }}"
             sortable: true
             searchable: true
           updated:
             type: date
             label: MAJ
             text: '{{ page.updated.toDate("%Y-%m-%d") }}'
-            dateInputFormat: 'YYYY-MM-DD'
-            dateOutputFormat: 'D MMMMM YYYY'
+            dateInputFormat: "YYYY-MM-DD"
+            dateOutputFormat: "D MMMMM YYYY"
             sortable: true
 
   - width: 1/3
@@ -103,17 +98,3 @@ columns:
                 type: text
                 label: Nom
                 required: true
-              color:
-                type: color
-                label: Couleur
-                editableAlpha: false
-                presets:
-                  - "#F94144"
-                  - "#F3722C"
-                  - "#F8961E"
-                  - "#F9C74F"
-                  - "#90BE6D"
-                  - "#43AA8B"
-                  - "#008090"
-                  - "#2B6A9E"
-                  - "#6F54A0"

@@ -1,6 +1,7 @@
 @import '_layout.css';
 @import '_menu.css';
 @import '_form.css';
+@import '_event.css';
 :root {
     --primary-color: #f30608;
     --text-color: white;
@@ -13,10 +14,17 @@
     src: url("../fonts/Heading-Now-84-Regular/Heading-Now-84-Regular.ttf") format("truetype");
 }
 
+@font-face {
+    font-family: "Heading Now Title";
+    src: url("../fonts/Heading-Now-95-Medium/Heading-Now-95-Medium.woff2") format("woff2"), url("../fonts/Heading-Now-95-Medium/Heading-Now-95-Medium.woff") format("woff"), url("../fonts/Heading-Now-95-Medium/Heading-Now-95-Medium.ttf") format("truetype");
+}
+
 body {
     font-family: "Heading Now";
     line-height: 1.2;
     font-size: 18px;
+    /* color in pink while the image load */
+    background-color: var(--menu-color);
 }
 
 * {
@@ -31,17 +39,33 @@ a {
 h1,
 h2 {
     text-transform: uppercase;
-    font-size: 1.7rem;
-    letter-spacing: 2px;
-    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    font-family: "Heading Now Title";
+    font-weight: normal;
+    width: 100%;
+}
+
+h2+p {
+    margin-top: -.7rem;
 }
 
 figure {
     margin: 0;
 }
 
+iframe {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
 img {
     max-width: 100%;
+}
+
+figcaption {
+    font-size: .7rem;
+    opacity: .9;
 }
 
 button {
