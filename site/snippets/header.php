@@ -31,6 +31,7 @@ if (!$kirby->user() && $site->maintenance()->isTrue() && $page->uid() != 'mainte
         <a href="<?= $item->url() ?>" class="<?= ($page->uid() == $item->uid() || $isAgendaOrEvent) ? 'active' : '' ?>">
           <?= html($item->title()) ?>
         </a>
+
         <div class="sub-items">
           <!-- Dynamically populated by javascript based on content titles -->
         </div>
@@ -49,7 +50,11 @@ if (!$kirby->user() && $site->maintenance()->isTrue() && $page->uid() != 'mainte
         <?php endif ?>
       <?php endforeach ?>
     </nav>
-    <p>TODO: Horaires d'ouverture</p>
+
+    <?= $site->address() ?>
+    <?= $site->openhours_abstract() ?>
+    <?= $site->openhours() ?>
+
   </menu>
 
   <main class="content page-<?= $page->uid() ?> <?= $isEvent ? 'page-event' : '' ?>">

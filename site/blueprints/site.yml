@@ -58,8 +58,16 @@ tabs:
                 label: Spotify
                 type: url
                 icon: spotify
+              address:
+                label: Adresse
+                type: textarea
+                size: small
+              openhours_abstract:
+                label: Horaires (résumé)
+                type: textarea
+                size: small
               openhours:
-                label: Horaires
+                label: Horaires Complètes
                 type: textarea
                 size: medium
 
@@ -77,4 +85,3 @@ tabs:
         progress: Nettoyage...
         icon: refresh
         job: cleanCache
-
