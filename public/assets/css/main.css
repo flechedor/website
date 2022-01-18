@@ -2,6 +2,9 @@
 @import '_menu.css';
 @import '_form.css';
 @import '_event.css';
+@import '_nav.css';
+@import '_reset.css';
+@import '_typography.css';
 :root {
     --primary-color: #f30608;
     --text-color: white;
@@ -107,8 +110,4 @@ button[type="submit"] {
 
 #sections {
     background-image: url("../img/buttons/AGENDA.png")
-}
-
-#social {
-    
 }
