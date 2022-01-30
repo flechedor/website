@@ -1,0 +1,100 @@
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 999;
+    background: transparent url(../images/bg_nav-mobile@2x.jpg) center top no-repeat;
+    background-size: cover;
+}
+
+.header-inner {
+    padding: 10px;
+    -webkit-transition: background 0.5s ease-out;
+    -moz-transition: background 0.5s ease-out;
+    -ms-transition: background 0.5s ease-out;
+    -o-transition: background 0.5s ease-out;
+    transition: background 0.5s ease-out;
+    border-bottom: none;
+    width: 100%;
+    opacity: 1;
+    -webkit-animation: fadeInDown 0.5s cubic-bezier(.16, .68, .43, .99);
+    -moz-animation: fadeInDown 0.5s cubic-bezier(.16, .68, .43, .99);
+    -ms-animation: fadeInDown 0.5s cubic-bezier(.16, .68, .43, .99);
+    -o-animation: fadeInDown 0.5s cubic-bezier(.16, .68, .43, .99);
+    animation: fadeInDown 0.5s cubic-bezier(.16, .68, .43, .99);
+}
+
+.header-inner .logo {
+    display: flex;
+    justify-content: center;
+    height: 40px;
+}
+
+.menu-button {
+    cursor: pointer;
+    display: block;
+    width: 25px;
+    height: 20px;
+    right: 10px;
+    position: absolute;
+    top: 15px;
+}
+
+
+.menu-button .before, .menu-button .main, .menu-button .after {
+    display: block;
+    width: 25px;
+    height: 2px;
+    background: #FF0000;
+    margin-bottom: 5px;
+    -webkit-transition: -webkit-transform 0.2s;
+    -moz-transition: -moz-transform 0.2s;
+    -ms-transition: -ms-transform 0.2s;
+    -o-transition: -o-transform 0.2s;
+    transition: transform 0.2s;
+}
+
+.push-active .menu-button .before {
+    margin: 0;
+    -webkit-transition: -webkit-transform 0.5s;
+    -moz-transition: -moz-transform 0.5s;
+    -ms-transition: -ms-transform 0.5s;
+    -o-transition: -o-transform 0.5s;
+    transition: transform 0.5s;
+    -webkit-transform: translateY(2px) rotate(45deg);
+    -moz-transform: translateY(2px) rotate(45deg);
+    -ms-transform: translateY(2px) rotate(45deg);
+    -o-transform: translateY(2px) rotate(45deg);
+    transform: translateY(2px) rotate(45deg);
+}
+
+.push-active .menu-button .main {
+    display: none;
+}
+
+.push-active .menu-button .after {
+    margin: 0;
+    -webkit-transition: -webkit-transform 0.5s;
+    -moz-transition: -moz-transform 0.5s;
+    -ms-transition: -ms-transform 0.5s;
+    -o-transition: -o-transform 0.5s;
+    transition: transform 0.5s;
+    -webkit-transform: translateY(0) rotate(-45deg);
+    -moz-transform: translateY(0) rotate(-45deg);
+    -ms-transform: translateY(0) rotate(-45deg);
+    -o-transform: translateY(0) rotate(-45deg);
+    transform: translateY(0) rotate(-45deg);
+}
+
+@media(min-width: 768px) {
+    .header-inner .logo {
+        height: 60px;
+    }
+}
+
+@media(min-width: 1024px) {
+    .menu-button {
+        display: none;
+    }
+}

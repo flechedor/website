@@ -1,113 +1,59 @@
-@import '_layout.css';
-@import '_menu.css';
-@import '_form.css';
-@import '_event.css';
-@import '_nav.css';
-@import '_reset.css';
-@import '_typography.css';
-:root {
-    --primary-color: #f30608;
-    --text-color: white;
-    --bg-color: black;
-    --menu-color: #fe6dda;
-}
+@import 'reset.css';
 
-@font-face {
-    font-family: "Heading Now";
-    src: url("../fonts/Heading-Now-84-Regular/Heading-Now-84-Regular.ttf") format("truetype");
-}
-
-@font-face {
-    font-family: "Heading Now Title";
-    src: url("../fonts/Heading-Now-95-Medium/Heading-Now-95-Medium.woff2") format("woff2"), url("../fonts/Heading-Now-95-Medium/Heading-Now-95-Medium.woff") format("woff"), url("../fonts/Heading-Now-95-Medium/Heading-Now-95-Medium.ttf") format("truetype");
-}
+@import 'typography.css';
+@import 'header.css';
+@import 'nav.css';
+@import 'footer.css';
+@import 'form.css';
 
 body {
-    font-family: "Heading Now";
-    line-height: 1.2;
-    font-size: 18px;
-    /* color in pink while the image load */
-    background-color: var(--menu-color);
-}
-
-* {
-    box-sizing: border-box;
+    background-color: #000;
+    color: #FFF;
+    font-family: 'heading-Now-Regular', Arial, Helvetica, sans-serif;
+    font-size: 14px;
 }
 
 a {
-    color: var(--primary-color);
-    text-decoration: none;
+    color: #FFF;
 }
 
-h1,h2 {
+p {
+    font-size: 0.8rem;
+    line-height: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
+}
+
+h1 {
     font-size: 2rem;
-    margin-bottom: 1.5rem;
-    font-family: "Heading Now Title";
-    font-weight: normal;
-    width: 100%;
-}
-
-h2+p {
-    margin-top: -.7rem;
-}
-
-figure {
-    margin: 0;
-}
-
-iframe {
-    width: 100%;
+    line-height: 2.4rem;
     margin-bottom: 1rem;
 }
 
-img {
+.img-responsive {
     max-width: 100%;
+    height: auto;
 }
 
-figcaption {
-    font-size: .7rem;
-    opacity: .9;
+main {
+    padding: 5rem 1rem 3rem 1rem;
 }
 
-button {
-    color: var(--primary-color);
-    font: inherit;
-    box-shadow: none;
-    border: none;
-    text-transform: uppercase;
-    background-size: cover !important;
-    padding: 6px 10px;
-    cursor: pointer;
+section {
+    margin-bottom: 5rem;
 }
 
-button[data-shape="ENVOYER"] {
-    background: url('../img/buttons/ENVOYER.png');
+@media(min-width: 768px) {
+    main {
+        padding: 7rem 3rem 3rem 3rem;
+    }
 }
 
-button[type="submit"] {
-    margin: .5rem 0 1rem 0;
-}
-
-
-
-.alert {
-    padding: 1rem;
-    margin-bottom: 1rem;
-}
-
-.alert+.alert {
-    margin-top: -2rem;
-}
-
-.alert.error {
-    background-color: var(--primary-color);
-}
-
-.alert.success {
-    background-color: var(--menu-color);
-}
-
-#sections {
-    background-image: url("../img/buttons/AGENDA.png")
+@media(min-width: 1024px) {
+    main {
+        padding: 3rem 3rem 3rem 3rem;
+    }
 }
