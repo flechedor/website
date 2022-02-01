@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'heading-Now-Regular';
+    src: url('../fonts/heading-now-84-regular-webfont.eot');
+    src: url('../fonts/heading-now-84-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/heading-now-84-regular-webfont.woff2') format('woff2'),
+         url('../fonts/heading-now-84-regular-webfont.woff') format('woff'),
+         url('../fonts/heading-now-84-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'heading-Now-Book';
+    src: url('../fonts/heading-now-73-book-webfont.eot');
+    src: url('../fonts/heading-now-73-book-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/heading-now-73-book-webfont.woff2') format('woff2'),
+         url('../fonts/heading-now-73-book-webfont.woff') format('woff'),
+         url('../fonts/heading-now-73-book-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
