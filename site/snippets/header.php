@@ -62,4 +62,11 @@ if (!$kirby->user() && $site->maintenance()->isTrue() && $page->uid() != 'mainte
 
   </menu>
 
+  <!-- Donate button -->
+  <a class="donate" href="<?= $site->donate() ?>" target="_blank">
+    <img class="background" src="<?= $kirby->url('assets') ?>/img/donate/FOND PAPIER.png" alt="Fond" />
+    <img class="heart" src="<?= $kirby->url('assets') ?>/img/donate/COEUR.png" alt="Coeur" />
+    <img class="text" src="<?= $kirby->url('assets') ?>/img/donate/NOUS SOUTENIR.png" alt="Nous soutenir" />
+  </a>
+
   <main class="content page-<?= $page->uid() ?> <?= $isEvent ? 'page-event' : '' ?>">

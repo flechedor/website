@@ -5,6 +5,7 @@
 @import '_form.css';
 @import '_event.css';
 @import '_infos.css';
+@import '_donate.css';
 
 :root {
     --primary-color: #f30608;

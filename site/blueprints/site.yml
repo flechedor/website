@@ -59,6 +59,10 @@ tabs:
                 label: Spotify
                 type: url
                 icon: spotify
+              donate:
+                label: Url de la page de don
+                type: url
+                icon: heart
               openhours_abstract:
                 label: Horaires (résumé)
                 type: textarea

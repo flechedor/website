@@ -6,7 +6,7 @@ Description: La Flèche d'Or est un lieu politique, culturel et de solidarité. 
 
 ----
 
-Infos:
+Address:
 
 102b rue de Bagnolet
 75020 PARIS
@@ -25,10 +25,7 @@ Spotify: https://spotify.com/flechedor20
 
 ----
 
-Address:
-
-102b rue de Bagnolet
-75020 PARIS
+Donate: https://www.helloasso.com/associations/l-inter-co/formulaires/1
 
 ----
 
@@ -47,3 +44,10 @@ DIMANCHE : 9H30-11H30
 ----
 
 Maintenance: false
+
+----
+
+Infos:
+
+102b rue de Bagnolet
+75020 PARIS
