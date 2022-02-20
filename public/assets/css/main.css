@@ -2,21 +2,12 @@
 @import '_menu.css';
 @import '_form.css';
 @import '_event.css';
+@import '_typography.css';
 :root {
     --primary-color: #f30608;
     --text-color: white;
     --bg-color: black;
     --menu-color: #fe6dda;
-}
-
-@font-face {
-    font-family: "Heading Now";
-    src: url("../fonts/Heading-Now-84-Regular/Heading-Now-84-Regular.ttf") format("truetype");
-}
-
-@font-face {
-    font-family: "Heading Now Title";
-    src: url("../fonts/Heading-Now-95-Medium/Heading-Now-95-Medium.woff2") format("woff2"), url("../fonts/Heading-Now-95-Medium/Heading-Now-95-Medium.woff") format("woff"), url("../fonts/Heading-Now-95-Medium/Heading-Now-95-Medium.ttf") format("truetype");
 }
 
 body {
@@ -102,4 +93,11 @@ button[type="submit"] {
 
 .alert.success {
     background-color: var(--menu-color);
+<<<<<<< HEAD
+=======
+}
+
+#sections {
+    background-image: url("../img/buttons/AGENDA.png")
+>>>>>>> ec234d3... màj  des assets css fonts et img
 }
