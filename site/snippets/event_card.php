@@ -3,7 +3,7 @@
     <!-- extract src attribute from HTML string -->
     <?php preg_match('/src="([^"]+)"/', $cover->clip(), $src); ?>
     <?php if (isset($src[1])) : ?>
-      <img data-src="<?= $src[1] ?>" class="lazyload">
+      <img src="<?= $src[1] ?>">
     <?php else : ?>
       <?= $cover->clip() ?>
     <?php endif ?>
