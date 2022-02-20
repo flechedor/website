@@ -31,7 +31,8 @@
     color: var(--text-color);
     justify-content: center;
     align-items: center;
-    font-size: 2rem;
+    font-size: 1.8rem;
+    text-align: center;
     font-weight: normal;
     flex-direction: column;
     line-height: 1.3;

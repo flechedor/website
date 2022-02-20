@@ -12,7 +12,7 @@ class EventPage extends Page
         if ($end->toDate() == $start->toDate()) {
             return "{$this->formatDate($start,$fullDisplay ? 'cccc dd/MM' : 'ccc dd/MM')}";
         } else {
-            return "{$this->formatDate($start, 'DD/MM')} - {$this->formatDate($end, 'DD/MM')}";
+            return "{$this->formatDate($start, 'DD/MM')}-{$this->formatDate($end, 'DD/MM')}";
         }
     }
 
