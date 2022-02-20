@@ -1,8 +1,10 @@
+@import '_reset.css';
 @import '_layout.css';
 @import '_menu.css';
 @import '_form.css';
 @import '_event.css';
 @import '_typography.css';
+
 :root {
     --primary-color: #f30608;
     --text-color: white;
