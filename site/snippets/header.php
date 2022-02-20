@@ -22,9 +22,16 @@ if (!$kirby->user() && $site->maintenance()->isTrue() && $page->uid() != 'mainte
 
 <body>
   <menu>
-    <a href="<?= $site->url() ?>">
-      <img class="logo" src="<?= $kirby->url('assets') ?>/img/logo.png" alt="Flèche d'Or" />
-    </a>
+    <div class="menu-header">
+      <a href="<?= $site->url() ?>">
+        <img class="logo" src="<?= $kirby->url('assets') ?>/img/logo.png" alt="Flèche d'Or" />
+      </a>
+      <span class="menu-button">
+        <div></div>
+        <div></div>
+        <div></div>
+      </span>
+    </div>
     <nav>
       <?php foreach ($site->children()->listed() as $item) : ?>
         <?php $isAgendaOrEvent = ($page->uid() == "agenda" || $isEvent) && $item->uid() == "agenda" ?>

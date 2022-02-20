@@ -63,3 +63,20 @@
 .event-headline {
     margin-top: -1rem;
 }
+@media (max-width: 700px) {
+    .event {
+        width: 100%;
+    }
+}
+@media (max-width: 1200px) {
+    .event .overlay {
+        display: block;
+        top: initial;
+        font-size: 1.3rem;
+        padding: .8rem;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+    .event .overlay div {
+        display: inline;
+    }
+}

@@ -9,7 +9,9 @@
 
   <div class="address-openhours">
     <div class="col col-left">
+      <h2>Adresse</h2>
       <div class="address"><?= $site->address() ?></div>
+      <h2>Horaires</h2>
       <div class="openhours-abstract"><?= $site->openhours_abstract() ?></div>
     </div>    
     <div class="col col-right">

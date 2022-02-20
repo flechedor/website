@@ -56,6 +56,10 @@ menu nav a.contact {
     transform: rotateZ(5deg);
     margin-top: -.3rem;
 }
+menu nav a.infos {
+    transform: rotateZ(0);
+    margin-top: 1.3rem;
+}
 
 a.contact.active, a.contact:hover {
     background: url('../img/buttons/CONTACT.png');
@@ -67,6 +71,9 @@ a.comment-ca-se-passe.active, a.comment-ca-se-passe:hover {
     background: url('../img/buttons/COMMENT ÇA SE PASSE.png');
 }
 a.nous-rejoindre.active, a.nous-rejoindre:hover {
+    background: url('../img/buttons/NOUS REJOINDRE.png');
+}
+a.infos.active, a.infos:hover {
     background: url('../img/buttons/NOUS REJOINDRE.png');
 }
 
@@ -102,4 +109,52 @@ menu nav a.sub-item.active:after {
     background-size: cover;
     position: absolute;
     bottom: -4px;
+}
+
+@media (max-width: 1200px) {
+    menu {
+        padding: 1rem;
+    }
+    .menu-header {
+        display: flex;
+        align-items: center;
+        height: 4rem;
+    }
+    .menu-header a {
+        flex-grow: 1;
+        text-align: center;
+    }
+    menu .logo {
+        height: 4rem;
+        margin: 0;
+    }
+    .menu-button {
+        width: 4.5rem;
+        flex-shrink: 0;
+        padding: 1rem;
+        cursor: pointer;
+        position: absolute;
+        right: 1rem;
+    }
+    .menu-button > div {
+        height: 5px;
+        background-color: var(--primary-color);
+        margin: 6px 0;
+    }
+    menu nav, menu > .infos {
+        display: none;
+    }
+    menu nav {
+        text-align: center;
+        margin: 2rem 0 1.5rem 0
+    }
+    menu nav a.agenda {
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media (min-width: 1201px) {
+    menu a.infos { 
+        display: none;
+    }
 }

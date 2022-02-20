@@ -4,7 +4,7 @@ Title: Bienvenue à la Flèche d’Or !
 
 Htmlcontent:
 
-## Cette semain, à la flèche
+## Cette semaine, à la flèche
 <div id="next-events"></div> <!-- Cette ligne permet d'insérer la liste des prochains événements à l'endroit voulu -->
 
 ## Notre Histoire
