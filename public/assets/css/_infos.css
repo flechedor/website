@@ -1,0 +1,46 @@
+.socials, .address-openhours {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+.socials > .col:nth-child(even), .address-openhours > .col:nth-child(even) {
+  width: 60%;
+}
+.socials > .col:nth-child(odd), .address-openhours > .col:nth-child(odd) {
+  width: 40%;
+}
+
+/* SOCIALS */
+.socials a {
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 1.2rem;
+  margin-bottom: .4rem;
+  background-size: cover !important;
+  padding: .4rem .5rem .1rem .5rem;
+  margin-left: -.4rem;
+}
+a.facebook:hover {
+  background: url('../img/buttons/FACEBOOK.png');
+}
+a.instagram:hover {
+  background: url('../img/buttons/INSTAGRAM.png');
+}
+a.spotify:hover {
+  background: url('../img/buttons/SPOTIFY.png');
+}
+
+/* ADDRESS & OPENHOURS */
+.address-openhours {
+  color: var(--text-color);
+  font-size: .9rem;
+}
+.col-left {
+  padding-right: 1rem;
+}
+.address {
+  margin-bottom: 1rem;
+}
+.openhours {
+  white-space: pre-line;
+}

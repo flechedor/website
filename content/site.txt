@@ -25,11 +25,14 @@ Spotify: https://spotify.com/flechedor20
 
 ----
 
-Address: Mon adresse
+Address:
+
+102b rue de Bagnolet
+75020 PARIS
 
 ----
 
-Openhours-abstract: 
+Openhours-abstract: Ouverture du mercredi au dimanche
 
 ----
 

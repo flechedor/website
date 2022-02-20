@@ -8,7 +8,12 @@ body {
 menu,
 main {
     margin: 0;
-    padding: 1.5rem 3rem;
+    padding: 2rem 3rem;
+}
+@media (max-width: 1400px) {
+    menu, main {
+        padding: 1.5rem;
+    }
 }
 
 menu {

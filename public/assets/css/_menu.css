@@ -1,6 +1,22 @@
 menu {
     background-repeat: repeat;
     background-size: cover !important;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
+menu::-webkit-scrollbar-track {
+    background-color: var(--text-color);
+    border: 1px solid var(--text-color);
+}
+
+menu::-webkit-scrollbar {
+    width: 10px;
+}
+
+menu::-webkit-scrollbar-thumb {
+    background-color: var(--primary-color);
+    min-height: 40px;
 }
 
 @media (max-width: 800px) {
@@ -15,23 +31,54 @@ menu {
     }
 }
 
-menu nav a {
-    display: inline-block;
-    font-size: 2rem;
-    text-transform: uppercase;
-    margin: .5rem 0;
+menu .logo {
+    margin-top: -1rem;
 }
 
-menu nav a:not(.sub-item).active {
-    background-color: white;
+menu nav {
+    flex-grow: 1;
+    margin: 3rem 0 2rem 0;    
+}
+menu nav a {
+    display: inline-block;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    margin: .3rem 0;
+}
+menu nav > a {
+    transform: rotateZ(-5deg);
+    transform-origin: left;
+    background-size: cover !important;
+    padding: .2rem .5rem 0 .5rem;
+    margin-left: -.5rem;
+}
+menu nav a.contact {
+    transform: rotateZ(5deg);
+    margin-top: -.3rem;
+}
+
+a.contact.active, a.contact:hover {
+    background: url('../img/buttons/CONTACT.png');
+}
+a.agenda.active, a.agenda:hover {
+    background: url('../img/buttons/AGENDA.png');
+}
+a.comment-ca-se-passe.active, a.comment-ca-se-passe:hover {
+    background: url('../img/buttons/COMMENT ÇA SE PASSE.png');
+}
+a.nous-rejoindre.active, a.nous-rejoindre:hover {
+    background: url('../img/buttons/NOUS REJOINDRE.png');
 }
 
 menu nav a.sub-item {
     display: block;
-    font-size: 1.4rem;
-    margin: .2rem 0;
+    font-size: 1.2rem;
+    margin: .1rem 0;
     position: relative;
     cursor: pointer;
+}
+menu nav a.sub-item:last-child {
+    margin-bottom: 2rem; /* some margin cause nav items are rotates */
 }
 
 .agenda-filters {

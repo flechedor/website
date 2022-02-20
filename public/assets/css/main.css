@@ -1,9 +1,10 @@
 @import '_reset.css';
+@import '_typography.css';
 @import '_layout.css';
 @import '_menu.css';
 @import '_form.css';
 @import '_event.css';
-@import '_typography.css';
+@import '_infos.css';
 
 :root {
     --primary-color: #f30608;
@@ -12,12 +13,17 @@
     --menu-color: #fe6dda;
 }
 
-body {
+html, body {
     font-family: "Heading Now";
-    line-height: 1.2;
+    line-height: 1.3;
     font-size: 18px;
     /* color in pink while the image load */
     background-color: var(--menu-color);
+}
+@media (max-width: 1200px) {
+    html, body {
+        font-size: 15px;
+    }
 }
 
 * {
@@ -32,7 +38,8 @@ a {
 h1,
 h2 {
     text-transform: uppercase;
-    font-size: 2rem;
+    font-size: 1.6rem;
+    letter-spacing: -1px;
     margin-bottom: 1.5rem;
     font-family: "Heading Now Title";
     font-weight: normal;
@@ -43,8 +50,12 @@ h2+p {
     margin-top: -.7rem;
 }
 
+form, p {
+    margin-bottom: 1rem;
+}
+
 figure {
-    margin: 0;
+    margin: 1rem 0;
 }
 
 iframe {
@@ -58,7 +69,7 @@ img {
 
 figcaption {
     font-size: .7rem;
-    opacity: .9;
+    font-weight: 300;
 }
 
 button {
@@ -68,7 +79,7 @@ button {
     border: none;
     text-transform: uppercase;
     background-size: cover !important;
-    padding: 6px 10px;
+    padding: 9px 10px 3px 10px;
     cursor: pointer;
 }
 
@@ -95,11 +106,4 @@ button[type="submit"] {
 
 .alert.success {
     background-color: var(--menu-color);
-<<<<<<< HEAD
-=======
-}
-
-#sections {
-    background-image: url("../img/buttons/AGENDA.png")
->>>>>>> ec234d3... màj  des assets css fonts et img
 }

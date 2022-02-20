@@ -36,9 +36,10 @@ tabs:
                 type: textarea
                 size: medium
                 buttons: false
-              infos:
+              address:
                 label: Adresse
                 type: textarea
+                size: small
 
       right:
         width: 1/2
@@ -58,10 +59,6 @@ tabs:
                 label: Spotify
                 type: url
                 icon: spotify
-              address:
-                label: Adresse
-                type: textarea
-                size: small
               openhours_abstract:
                 label: Horaires (résumé)
                 type: textarea

@@ -23,12 +23,12 @@ if (!$kirby->user() && $site->maintenance()->isTrue() && $page->uid() != 'mainte
 <body>
   <menu>
     <a href="<?= $site->url() ?>">
-      <img src="<?= $kirby->url('assets') ?>/img/logo.png" alt="Flèche d'Or" />
+      <img class="logo" src="<?= $kirby->url('assets') ?>/img/logo.png" alt="Flèche d'Or" />
     </a>
     <nav>
       <?php foreach ($site->children()->listed() as $item) : ?>
         <?php $isAgendaOrEvent = ($page->uid() == "agenda" || $isEvent) && $item->uid() == "agenda" ?>
-        <a href="<?= $item->url() ?>" class="<?= ($page->uid() == $item->uid() || $isAgendaOrEvent) ? 'active' : '' ?>">
+        <a href="<?= $item->url() ?>" class="<?= $item->uid() ?> <?= ($page->uid() == $item->uid() || $isAgendaOrEvent) ? 'active' : '' ?>">
           <?= html($item->title()) ?>
         </a>
 
@@ -51,9 +51,7 @@ if (!$kirby->user() && $site->maintenance()->isTrue() && $page->uid() != 'mainte
       <?php endforeach ?>
     </nav>
 
-    <?= $site->address() ?>
-    <?= $site->openhours_abstract() ?>
-    <?= $site->openhours() ?>
+    <?= snippet('infos') ?>
 
   </menu>
 
