@@ -8,7 +8,7 @@
 @import '_donate.css';
 
 :root {
-    --primary-color: #f30608;
+    --primary-color: #FF0C00;
     --text-color: white;
     --bg-color: black;
     --menu-color: #fe6dda;
@@ -20,6 +20,11 @@ html, body {
     font-size: 18px;
     /* color in pink while the image load */
     background-color: var(--menu-color);
+}
+@media (max-width: 1400px) {
+    html, body {
+        font-size: 16px;
+    }
 }
 @media (max-width: 1200px) {
     html, body {

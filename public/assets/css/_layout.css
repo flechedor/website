@@ -18,7 +18,7 @@ main {
 
 menu {
     height: 100vh;
-    width: 46vw;
+    width: calc(50vw - 1rem);
     flex-shrink: 0;
 }
 
@@ -29,6 +29,7 @@ main {
     overflow-x: hidden;
     overflow-y: auto;
     flex-grow: 1;
+    padding-bottom: 10rem; /* some space for the donate button to not overlap text at bottom */
 }
 
 @media (max-width: 1200px) {
