@@ -40,6 +40,10 @@ tabs:
                 label: Adresse
                 type: textarea
                 size: small
+              footer:
+                label: Pied de page
+                type: textarea
+                size: small
 
       right:
         width: 1/2

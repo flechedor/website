@@ -113,3 +113,14 @@ button[type="submit"] {
 .alert.success {
     background-color: var(--menu-color);
 }
+
+footer {
+    font-size: .6rem;
+    opacity: .7;
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+    min-height: 6rem;
+    display: flex;
+    align-items: flex-end;
+    white-space: pre-line;
+}
