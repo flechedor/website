@@ -8,9 +8,9 @@ body {
 menu,
 main {
     margin: 0;
-    padding: 2rem 3rem;
+    padding: 2rem 3rem 1.5rem 3rem;
 }
-@media (max-width: 1400px) {
+@media (max-width: 1500px) {
     menu, main {
         padding: 1.5rem;
     }
@@ -29,7 +29,6 @@ main {
     overflow-x: hidden;
     overflow-y: auto;
     flex-grow: 1;
-    padding-bottom: 10rem; /* some space for the donate button to not overlap text at bottom */
 }
 
 @media (max-width: 1200px) {
