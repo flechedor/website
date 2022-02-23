@@ -46,8 +46,7 @@ a {
     text-decoration: none;
 }
 
-h1,
-h2 {
+h1, h2, h3 {
     text-transform: uppercase;
     font-size: 1.6rem;
     letter-spacing: -1px;
@@ -56,6 +55,14 @@ h2 {
     font-weight: normal;
     width: 100%;
 }
+h2 {
+    font-size: 1.3rem;
+}
+h3 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
 
 h2+p {
     margin-top: -.7rem;
