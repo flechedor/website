@@ -129,3 +129,16 @@ footer {
     align-items: flex-end;
     white-space: pre-line;
 }
+
+ul, ol {
+    margin: -.5rem 0 1rem 1rem;
+}
+ol {
+    margin-left: 1.5rem;
+}
+strong {
+    font-weight: bold;
+}
+em {
+    font-style: italic;
+}
