@@ -32,10 +32,6 @@ a.spotify:hover {
 }
 .address {
   margin-bottom: 1rem;
-  white-space: pre-line;
-}
-.openhours {
-  white-space: pre-line;
 }
 
 @media (min-width: 1201px) {
@@ -47,10 +43,14 @@ a.spotify:hover {
   .address-openhours h2 {
     display: none;
   }
-  .socials > .col:nth-child(even), .address-openhours > .col:nth-child(even) {
+  .socials > .col:nth-child(even), 
+  .address-openhours > .col:nth-child(even), 
+  .agenda-filters a.sub-item:nth-child(even) {
     width: 60%;
   }
-  .socials > .col:nth-child(odd), .address-openhours > .col:nth-child(odd) {
+  .socials > .col:nth-child(odd), 
+  .address-openhours > .col:nth-child(odd),
+  .agenda-filters a.sub-item:nth-child(odd) {
     width: 40%;
   }
 }

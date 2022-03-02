@@ -10,6 +10,7 @@
   <?php endif ?>
 
   <div class="overlay">
+    <div><?= $event->title() ?></div>
     <div><?= $event->formatedDate() ?></div>
     <div><?= $event->formatedTime() ?></div>
   </div>

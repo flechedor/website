@@ -30,12 +30,12 @@
     background-color: rgba(0, 0, 0, 0.5);
     color: var(--text-color);
     justify-content: center;
-    align-items: center;
-    font-size: 1.8rem;
-    text-align: center;
+    align-items: flex-start;
+    padding: 0 2rem;
+    font-size: 1.5rem;
     font-weight: normal;
     flex-direction: column;
-    line-height: 1.3;
+    line-height: 1.2;
     font-family: 'Heading Now Title';
 }
 
