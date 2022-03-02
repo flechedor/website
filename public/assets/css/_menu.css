@@ -83,6 +83,7 @@ menu nav a.sub-item {
     margin: .1rem 0;
     position: relative;
     cursor: pointer;
+    height: 1.5rem;
 }
 menu nav a.sub-item:last-child {
     margin-bottom: 2rem; /* some margin cause nav items are rotates */
@@ -127,6 +128,7 @@ menu nav a.sub-item.active:after {
     menu .logo {
         height: 4rem;
         margin: 0;
+        width: auto;
     }
     .menu-button {
         width: 4.5rem;

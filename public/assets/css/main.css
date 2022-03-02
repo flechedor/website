@@ -45,6 +45,19 @@ a {
     color: var(--primary-color);
     text-decoration: none;
 }
+main.content a {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+main.content a:visited {
+    color: var(--menu-color);
+}
+main.content footer a {
+    text-decoration: none;
+}
+main.content footer a:hover {
+    text-decoration: underline;
+}
 
 h1, h2, h3 {
     text-transform: uppercase;
@@ -82,6 +95,7 @@ iframe {
 }
 
 img {
+    width: 100%;
     max-width: 100%;
 }
 
@@ -148,9 +162,8 @@ ol {
     margin-left: 1.5rem;
 }
 strong {
-    font-weight: bold;
+    color: var(--primary-color);
 }
 em {
-    font-style: italic;
-    font-weight: 300;
+    text-decoration: underline;
 }

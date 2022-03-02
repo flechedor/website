@@ -11,6 +11,7 @@
   background-size: cover !important;
   padding: .4rem .5rem .1rem .5rem;
   margin-left: -.4rem;
+  text-decoration: none !important;
 }
 a.facebook:hover {
   background: url('../img/buttons/FACEBOOK.png');
@@ -25,7 +26,7 @@ a.spotify:hover {
 /* ADDRESS & OPENHOURS */
 .address-openhours {
   color: var(--text-color);
-  font-size: .9rem;
+  font-size: .85rem;
 }
 .col-left {
   padding-right: 1rem;
