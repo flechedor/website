@@ -1,4 +1,4 @@
-<footer><?= $site->footer() ?></footer>
+<footer><?= $site->footer()->kt() ?></footer>
 <?= js('assets/js/main.js') ?>
 </main>
 </body>

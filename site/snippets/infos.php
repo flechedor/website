@@ -10,12 +10,12 @@
   <div class="address-openhours">
     <div class="col col-left">
       <h2>Adresse</h2>
-      <div class="address"><?= $site->address() ?></div>
+      <div class="address"><?= $site->address()->kt() ?></div>
       <h2>Horaires</h2>
-      <div class="openhours-abstract"><?= $site->openhours_abstract() ?></div>
+      <div class="openhours-abstract"><?= $site->openhours_abstract()->kt() ?></div>
     </div>    
     <div class="col col-right">
-      <div class="openhours"><?= $site->openhours() ?></div>
+      <div class="openhours"><?= $site->openhours()->kt() ?></div>
     </div>
   </div>
 </div>
