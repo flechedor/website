@@ -1,11 +1,11 @@
-@import '_reset.css';
-@import '_typography.css';
-@import '_layout.css';
-@import '_menu.css';
-@import '_form.css';
-@import '_event.css';
-@import '_infos.css';
-@import '_donate.css';
+@import '_reset.css?v=1.0.3';
+@import '_typography.css?v=1.0.3';
+@import '_layout.css?v=1.0.3';
+@import '_menu.css?v=1.0.3';
+@import '_form.css?v=1.0.3';
+@import '_event.css?v=1.0.3';
+@import '_infos.css?v=1.0.3';
+@import '_donate.css?v=1.0.3';
 
 :root {
     --primary-color: #FF0C00;
