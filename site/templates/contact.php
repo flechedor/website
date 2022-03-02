@@ -7,7 +7,7 @@
 <?php endif ?>
 
 <h1>Écrivez-nous</h1>
-<p>Pour nous contacter, veuillez emplit le formulaire ci-dessous</p>
+<p>Pour nous contacter, veuillez remplir le formulaire ci-dessous</p>
 <form method="post" action="<?= $page->url() ?>">
   <input type="hidden" name="csrf" value="<?= csrf() ?>">
 
