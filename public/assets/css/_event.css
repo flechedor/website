@@ -18,6 +18,7 @@
 
 .event-back img {
     height: 2.5rem;
+    width: auto;
 }
 
 .event .overlay {
