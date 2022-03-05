@@ -17,3 +17,14 @@ textarea {
     color: var(--text-color);
     opacity: .8;
 }
+
+button[data-shape="ENVOYER"] {
+    background: url('../img/buttons/ENVOYER (TEXTE).png');
+}
+
+button[type="submit"] {
+    width: 8rem;
+    height: 3rem;
+    background-size: contain !important;
+    background-repeat: no-repeat;
+}

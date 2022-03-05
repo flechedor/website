@@ -8,10 +8,13 @@
   font-weight: 300;
   font-size: 1.2rem;
   margin-bottom: .4rem;
-  background-size: cover !important;
+  background-size: contain !important;
   padding: .4rem .5rem .1rem .5rem;
   margin-left: -.4rem;
   text-decoration: none !important;
+  width: 15rem;
+  height: 3rem;
+  background-repeat: no-repeat !important;
 }
 a.facebook:hover {
   background: url('../img/buttons/FACEBOOK.png');

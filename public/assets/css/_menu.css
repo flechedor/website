@@ -40,7 +40,7 @@ menu nav {
     margin: 2rem 0;    
 }
 menu nav a {
-    display: inline-block;
+    display: inline-block !important;
     font-size: 1.7rem;
     text-transform: uppercase;
     margin: .3rem 0;
@@ -92,6 +92,9 @@ menu nav a.sub-item:last-child {
 .agenda-filters {
     display: flex;
     flex-wrap: wrap;
+}
+@media (min-width: 800px) and (max-width: 1200px) {
+    .agenda-filters { margin: 0 8rem; }
 }
 
 .agenda-filters a.sub-item {
@@ -155,8 +158,14 @@ menu nav a.sub-item.active:after {
     }
 }
 
+@media (max-width: 800px) {
+    menu nav > a {
+        font-size: 1.3rem;
+    }
+}
+
 @media (min-width: 1201px) {
     menu a.infos { 
-        display: none;
+        display: none !important;
     }
 }

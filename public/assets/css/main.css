@@ -49,12 +49,6 @@ main.content a {
     color: var(--primary-color);
     text-decoration: underline;
 }
-main.content a:visited {
-    color: var(--menu-color);
-}
-main.content footer a {
-    text-decoration: none;
-}
 main.content footer a:hover {
     text-decoration: underline;
 }
@@ -113,14 +107,6 @@ button {
     background-size: cover !important;
     padding: 9px 10px 3px 10px;
     cursor: pointer;
-}
-
-button[data-shape="ENVOYER"] {
-    background: url('../img/buttons/ENVOYER.png');
-}
-
-button[type="submit"] {
-    margin: .5rem 0 1rem 0;
 }
 
 .alert {

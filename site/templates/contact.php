@@ -20,13 +20,13 @@
   <input type="text" placeholder="Nom/Prénom" name="name" required />
   <input type="email" placeholder="E-mail" name="email" required />
   <textarea id="text" placeholder="Message" name="text" rows="8" required></textarea>
-  <button type="submit" name="submit" data-shape="ENVOYER">Envoyer</button>
+  <button type="submit" name="submit" data-shape="ENVOYER"></button>
 </form>
 
 <h1>Inscrivez-vous à la newsletter </h1>
 <form action="https://gmail.us19.list-manage.com/subscribe/post?u=28d0a436313a02c8b4b15e719&amp;id=10b0d80558" method="post" name="mc-embedded-subscribe-form" class="validate" target="_blank">
   <input type="text" name="EMAIL" placeholder="E-mail">
-  <button type="submit" name="subscribe" data-shape="ENVOYER">Envoyer</button>
+  <button type="submit" name="subscribe" data-shape="ENVOYER"></button>
   <div style="position: absolute; left: -5000px;" aria-hidden="true">
     <input type="text" name="b_28d0a436313a02c8b4b15e719_10b0d80558" tabindex="-1" value="">
   </div>
