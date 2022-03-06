@@ -15,7 +15,7 @@ if (!$kirby->user() && $site->maintenance()->isTrue() && $page->uid() != 'mainte
   <title><?= $site->title() ?> | <?= $page->title() ?></title>
   <?= $page->metaTags() ?>
 
-  <?= css('assets/css/main.css?v=1.0.5') ?>
+  <?= css('assets/css/main.css?v=1.0.6') ?>
 </head>
 
 <?php $isEvent = $page->parent() && $page->parent()->uid() == "agenda" ?>
