@@ -85,6 +85,11 @@ menu nav a.sub-item {
     cursor: pointer;
     height: 1.5rem;
 }
+@media (max-width: 800px) {
+    menu nav a.sub-item {
+        font-size: 1rem;
+    }
+}
 menu nav a.sub-item:last-child {
     margin-bottom: 2rem; /* some margin cause nav items are rotates */
 }
